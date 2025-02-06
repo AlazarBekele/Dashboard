@@ -1,6 +1,9 @@
 
 .BeforeNav {
     background-color: #578FCA;
-    height: 40px;
+    height: 60px;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
