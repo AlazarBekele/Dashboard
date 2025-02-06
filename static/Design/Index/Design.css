@@ -40,3 +40,7 @@
 .NavLogo {
     width: 70px;
 }
+
+.HeroBannerImg {
+    background-image: '{% static "PostUseIMG/1.jpg" %}';
+}
