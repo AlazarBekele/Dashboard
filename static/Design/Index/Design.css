@@ -41,6 +41,10 @@
     width: 70px;
 }
 
-.HeroBannerImg {
-    background-image: '{% static "PostUseIMG/1.jpg" %}';
+.HeroIMG{
+    position: absolute;
+    filter: brightness(30%);
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }
