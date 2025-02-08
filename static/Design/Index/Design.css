@@ -7,7 +7,6 @@ body {
     background-color: #578FCA;
     height: 60px;
     width: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
@@ -63,7 +62,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .HeroTitle {
