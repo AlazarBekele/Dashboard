@@ -51,7 +51,6 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .HeroIMG{
@@ -62,8 +61,8 @@ body {
     z-index: -1;
 }
 
-.Main {
+.centerNav {
+    width: 90%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
