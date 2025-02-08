@@ -39,7 +39,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    filter: brightness(100%);
 }
 
 .NavLogo {
@@ -56,9 +55,8 @@ body {
 
 .HeroIMG{
     background-image: url(https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-6/476008349_670374318647101_8293330941788619199_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFsm0FOlRjjeCOwwi6eZAhaCtS15rPKP8gK1LXms8o_yE3SWOvyv4NeeAfzWudyziesOJhF8Xh8guv0JrWnHOpK&_nc_ohc=R9ZsXlbaNGQQ7kNvgETg8YU&_nc_oc=AdgS3owK0QeO66MqKJKUelHPoL0KjcJSX36TMU9C9pD-nWOOCttOvCVk6pOwaDUN56Y&_nc_zt=23&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=A1WXnMmHj6NiAfRBem9xkJJ&oh=00_AYCxa79kcNr--FW1pqLF_ZnShizbOycphR2Nem8_rET9JQ&oe=67AD4272);
-    filter: brightness(30%);
     width: 100%;
-    height: 100vh;
+    height: 98vh;
     position: absolute;
 }
 
