@@ -1,3 +1,7 @@
+.ProgramText {
+    font-size: 40px;
+}
+
 .Program {
-    font-size: 50px;
+    border: none;
 }
