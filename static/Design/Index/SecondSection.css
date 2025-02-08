@@ -4,4 +4,11 @@
 
 .Program {
     border: none;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -30px;
+    z-index: 1;
 }
