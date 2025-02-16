@@ -30,6 +30,7 @@
     width: 1300px;
     background-color: black;
     border-radius: 16px;
+    position: absolute;
 }
 
 .Main_nav img {
@@ -50,5 +51,9 @@
 }
 
 .background {
-    
+    position: relative;
+}
+
+.Pos {
+    position: absolute;
 }
