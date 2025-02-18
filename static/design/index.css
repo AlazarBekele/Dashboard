@@ -95,3 +95,24 @@
     filter: brightness(25%);
     position: relative;
 }
+
+.Card_container {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 1;
+}
+
+.Card_img {
+    width: 80px;
+    height: 80px;
+}
+
+.Main_Card {
+    flex-direction: column;
+}
+
+.Day_Container {
+    flex-direction: column;
+}
