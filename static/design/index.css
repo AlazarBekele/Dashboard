@@ -33,6 +33,7 @@
     position: absolute;
     z-index: 1;
     box-shadow: 0px 6px 50px #A6A6A6;
+    margin-top: 15px;
 }
 
 .Main_nav img {
@@ -63,6 +64,10 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(15%);
+    filter: brightness(25%);
     position: relative;
+}
+
+.EAG {
+    color: #FFC229;
 }
