@@ -30,6 +30,8 @@
     width: 1300px;
     background-color: black;
     border-radius: 16px;
+    position: absolute;
+    z-index: 1;
 }
 
 .Main_nav img {
@@ -56,8 +58,10 @@
     /* background-image: url("../../Website/templates/Background IMG/image1.png"); */
     background-image: url("https://z-p3-scontent.fadd1-1.fna.fbcdn.net/v/t39.30808-6/474592419_664448362573030_8087212184226740823_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGGUe8JcjcU1moIGAoNcTof4wrGZ0EZkvHjCsZnQRmS8c-lxN7sEROlJndPf_jBVAumLnzb05d_75BnPp0tVQDH&_nc_ohc=IFcIhh91xeEQ7kNvgFmenIy&_nc_oc=AdjTVLHEHPwGNecM0RjAU3WDxXLZKNKXdoTOaziMOJGBKaT-0uuSwFrXv06KGuqHSyY&_nc_zt=23&_nc_ht=z-p3-scontent.fadd1-1.fna&_nc_gid=A4GqQZ8sSLU-VKMt65WgwYx&oh=00_AYAO_KeLL6UwlCmF_jSQ3l-3j9FPb-bz8QS_C-RUys3HQg&oe=67BA60F7");
     height: 650px;
+    width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(15%);
+    position: relative;
 }
