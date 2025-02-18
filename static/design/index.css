@@ -30,8 +30,6 @@
     width: 1300px;
     background-color: rgb(255, 255, 255);
     border-radius: 16px;
-    position: absolute;
-    z-index: 1;
     box-shadow: 0px 6px 50px #A6A6A6;
     margin-top: 15px;
 }
@@ -70,4 +68,10 @@
 
 .EAG {
     color: #FFC229;
+    box-shadow: 0px 6px 50px #A6A6A6;
+}
+
+.Main_nav_large {
+    position: absolute;
+    z-index: 1;
 }
