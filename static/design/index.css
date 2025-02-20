@@ -117,3 +117,12 @@
 .Day_Container {
     flex-direction: column;
 }
+
+.WatchBtn {
+    border: none;
+    background-color: #578FCA;
+    color: white;
+    width: 235px;
+    height: 40px;
+    border-radius: 7px;
+}
