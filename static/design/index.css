@@ -94,3 +94,15 @@
     background-repeat: no-repeat;
     filter: brightness(25%);
 }
+
+.Card_container {
+    position: absolute;
+    z-index: 1;
+}
+
+.Main_Card {
+    width: 255px;
+    height: 245px;
+    background-color: white;
+    border-radius: 10px;
+}
