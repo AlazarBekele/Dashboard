@@ -99,9 +99,9 @@
     width: 255px;
     height: 245px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 50%;
     overflow: hidden;
-    /* box-shadow: 0px 4px 50px white; */
+    /* box-shadow: 0px 4px 10px rgb(7, 7, 7); */
 }
 
 .Card_img {
@@ -115,4 +115,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    position: absolute;
+    z-index: 1;
 }
