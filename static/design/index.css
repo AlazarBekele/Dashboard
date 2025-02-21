@@ -144,4 +144,12 @@
 .bible_verse {
     position: absolute;
     z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bible_verse_title {
+    font-size: 80px;
 }
