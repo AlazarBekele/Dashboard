@@ -87,10 +87,43 @@
 
 .Second_banner {
     background-image: url("https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-6/472163509_652199353797931_3816254120759517770_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE8ze9nIAExFmUGZ205RPqKX5xrt_oHd0hfnGu3-gd3SN5NzB_J2C19gP-Imwa0Tr_HkrwIU6dJOusoeWMSYUBb&_nc_ohc=WXgTQzwcbLMQ7kNvgHjZuTR&_nc_oc=AdiqUK0yDlDvjH7qYwkq2iEiVlTBtnYKBXbjcxXwQBrS_D1iYZAZCD_TCHoSRSxzo_4&_nc_zt=23&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=AVTxbCVSB0IO7dbBuoXXHW1&oh=00_AYBghuyHgSQeXYsoZ8N3VClB8vmL4qIOOxA8bQS6F6i9Mg&oe=67BA83A6");
-    height: 100vh;
+    height: 700px;
     width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(25%);
+    position: relative;
+}
+
+.Card_container {
+    width: 280px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+}
+
+.Card_img {
+    width: 80px;
+    height: 80px;
+}
+
+.Main_Card {
+    flex-direction: column;
+}
+
+.Day_Container {
+    flex-direction: column;
+}
+
+.WatchBtn {
+    border: none;
+    background-color: #578FCA;
+    color: white;
+    width: 235px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.Card_width {
+    width: 100%;
 }
