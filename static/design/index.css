@@ -105,6 +105,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(85%);
+    overflow: hidden;
 }
 
 .Second_banner::after {
@@ -123,7 +124,7 @@
     background-color: white;
     border-radius: 50%;
     overflow: hidden;
-    /* box-shadow: 0px 4px 10px rgb(7, 7, 7); */
+    box-shadow: 0px 4px 40px rgb(255, 255, 255);
 }
 
 .Card_img {
@@ -148,8 +149,19 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    flex-direction: column;
 }
 
 .bible_verse_title {
     font-size: 80px;
+}
+
+.bible_limiter {
+    width: 450px;
+    text-align: center;
+}
+
+.bible_location {
+    color: #FFC229;
+    float: inline-end;
 }
