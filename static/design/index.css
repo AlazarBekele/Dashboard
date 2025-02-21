@@ -4,6 +4,7 @@
     height: 100vh;
     position: absolute;
     background-color: #3674B5;
+    z-index: 1;
 }
 
 .SizeLogo {
@@ -31,7 +32,7 @@
     background-color: rgb(255, 255, 255);
     border-radius: 16px;
     box-shadow: 0px 6px 50px #A6A6A6;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 .Main_nav img {
@@ -75,7 +76,7 @@
 
 .Main_nav_large {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 .Hero_Banner_Text {
@@ -84,6 +85,14 @@
 
 .Hero_Title_padding {
     height: 400px;
+}
+
+.socia_media_container {
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
 }
 
 /*  */
@@ -95,7 +104,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(25%);
+    filter: brightness(35%);
 }
 
 .Main_Card {
@@ -118,6 +127,10 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 3;
+}
+
+.bible_verse {
     position: absolute;
-    z-index: 1;
+    z-index: 4;
 }
