@@ -51,6 +51,9 @@
     border-radius: 10px;
 }
 
+.socia_media_icon {
+    width: 50px;
+}
 
 /*  */
 
@@ -80,7 +83,7 @@
 }
 
 .Hero_Title_padding {
-    height: 500px;
+    height: 400px;
 }
 
 /*  */
