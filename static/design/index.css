@@ -281,7 +281,6 @@ body {
 
 .five_Img {
     background-image: url("https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-6/471588695_645792974438569_4891585779290299999_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHtt9KsMWzUWDPvmFN8psUEqIs02aSXnWioizTZpJedaE9wOIi4XSSA8ntXpHP-ekWgKY236LNkaP6IU41WT0FN&_nc_ohc=kCc43S4hNEIQ7kNvgE-TMWL&_nc_oc=AdjR0e5udrwQVZwiJ_3Upr3bH4Yfy3bKzYEPSB_MJIqrFuL0KqsAbyolTRrpVCr84mg&_nc_zt=23&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=Ai3Ogg__R3byz8znIzGS36a&oh=00_AYDZ6d1ujnoFmLSlRfoio2-a34hEs1GUtnuH_s-3w-XTgA&oe=67BFB382");
-    filter: blur(20px);
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -291,7 +290,18 @@ body {
     overflow: hidden;
 }
 
-.five_donate {
+.input_bar {
+    width: 400px;
+    height: 50px;
+    border: none;
+}
+
+.position_input {
     position: absolute;
-    z-index: 6;
+    z-index: 7;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
