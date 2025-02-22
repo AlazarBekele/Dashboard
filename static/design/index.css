@@ -305,3 +305,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.text_area {
+    position: absolute;
+    z-index: 7;
+}
+
+.Image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
