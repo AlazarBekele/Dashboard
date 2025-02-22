@@ -183,3 +183,20 @@
 .Main_bible_icon {
     width: 40px;
 }
+
+/*  */
+
+.Third_banner {
+    width: 100%;
+    height: 300px;
+    background-color: #584B4B;
+    overflow: hidden;
+}
+
+.Third_banner_title {
+    font-size: 50px;
+}
+
+.Third_banner_number {
+    font-size: 100px;
+}
