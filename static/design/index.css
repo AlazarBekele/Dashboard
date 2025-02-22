@@ -165,3 +165,21 @@
     color: #FFC229;
     float: inline-end;
 }
+
+.Bible_icon_Container {
+    background-color: #3674B5;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 40px rgb(255, 255, 255);
+}
+
+.icon_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+}
+
+.Main_bible_icon {
+    width: 40px;
+}
