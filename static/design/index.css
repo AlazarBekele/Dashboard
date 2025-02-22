@@ -1,4 +1,8 @@
 
+body {
+    padding-bottom: 1000px;
+}
+
 .Loading_Session {
     width: 100%;
     height: 100vh;
@@ -205,4 +209,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+}
+
+.Third_banner_number_banner_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Third_font {
+    font-size: 20px;
 }
