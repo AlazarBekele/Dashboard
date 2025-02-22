@@ -238,3 +238,26 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+/*  */
+
+.footer {
+    background-image: url("https://z-p3-scontent.fadd1-1.fna.fbcdn.net/v/t39.30808-6/475453934_670374615313738_8449406336027600875_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEuQO9cSI_w4qumej4wsndLKasMARokeAMpqwwBGiR4A1fOmnerNW3p-b-F9ym9baQfjcDm-xipjbvh7-Xbiuzw&_nc_ohc=ERjHRnSS32MQ7kNvgGTi8kF&_nc_oc=Adj9VDpYrIwbjpxPtZi4-PUjGskMa8KWU-VJ5F_bBp_mrZFxrEqOHAWs_omqs0qOC-g&_nc_zt=23&_nc_ht=z-p3-scontent.fadd1-1.fna&_nc_gid=AFQth2v9s2-knve0UON3krU&oh=00_AYC3RdLiIGTzwTKscmQQhU1eKel2s7aTrPoAM9bGsOexFA&oe=67BF7F9A");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(100%);
+    overflow: hidden;
+}
+
+.footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
