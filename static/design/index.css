@@ -200,3 +200,9 @@
 .Third_banner_number {
     font-size: 100px;
 }
+
+.Third_banner_number_banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
