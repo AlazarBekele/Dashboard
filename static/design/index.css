@@ -221,3 +221,20 @@ body {
 .Third_font {
     font-size: 20px;
 }
+
+/*  */
+
+.fourth_icon { 
+    filter: brightness(0) saturate(100%) invert(16%) sepia(60%) saturate(7468%) hue-rotate(357deg) brightness(97%) contrast(120%);
+    width: 50px;
+}
+
+.youtube {
+    width: 450px;
+}
+
+.video_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
