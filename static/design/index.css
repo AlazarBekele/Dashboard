@@ -251,7 +251,11 @@ body {
 /*  */
 
 .location {
-    width: 400px;
+    width: 50%;
+}
+
+.footer_map {
+    width: 100%;
 }
 
 /*  */
