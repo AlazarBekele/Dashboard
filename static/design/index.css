@@ -257,10 +257,14 @@ body {
 .footer_map {
     width: 100%;
     border-radius: 10px;
-    filter: blur(7px);
+    filter: brightness(70%);
 }
 
-.footer_map:hover
+.footer_map:hover {
+    filter: brightness(100%);
+    transition: 0.3s;
+}
+
 /*  */
 
 .fiveth_banner {
@@ -291,7 +295,7 @@ body {
 
 .position_input {
     width: 95%;
-    height: 400px;
+    height: 380px;
     display: flex;
     justify-content: space-between;
     align-items: center;
