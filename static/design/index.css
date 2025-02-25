@@ -256,8 +256,11 @@ body {
 
 .footer_map {
     width: 100%;
+    border-radius: 10px;
+    filter: blur(7px);
 }
 
+.footer_map:hover
 /*  */
 
 .fiveth_banner {
