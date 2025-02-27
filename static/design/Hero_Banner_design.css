@@ -11,5 +11,21 @@
 .Second_video_container {
     width: 95%;
     height: 60vh;
-    background-color: black;
+}
+
+.Video_container {
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.Main_video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
 }
