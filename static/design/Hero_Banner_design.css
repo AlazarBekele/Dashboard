@@ -28,3 +28,16 @@
     height: auto;
     filter: brightness(50%);
 }
+
+.Video_container_absolute {
+    position: absolute;
+    z-index: 1;
+}
+
+/*  */
+
+.Container_1 {
+    width: 200px;
+    height: 350px;
+    background-color: white;
+}
