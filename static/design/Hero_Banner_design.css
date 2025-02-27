@@ -1,0 +1,15 @@
+
+.All_card_container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Second_video_container {
+    width: 95%;
+    height: 60vh;
+    background-color: black;
+}
