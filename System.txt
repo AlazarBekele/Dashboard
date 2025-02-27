@@ -1,0 +1,49 @@
+First Page -->
+	
+	Hero Banner
+
+		Regular Program -->
+	
+			3 Program with in video card
+	
+		Service -->
+
+			List All Service
+
+		Donate -->
+
+			Know
+
+		Contact -- >
+
+			Modal
+
+	Social Icon -- > Link All Account
+
+
+	Second Banner -->
+
+		Icons_cards -->
+		
+			link cards
+
+		Daily Bible -->
+
+			javaScript change
+
+				- Store the Bible verse up to 30
+				- Have an id every verse
+				- Generate random number 1 - 30
+				- Change before 24 hour
+
+	Third Banner -- >
+
+		Increament the number show in html
+
+	Fourth Banner -- >
+
+		Scrap the recent video using date to this page
+
+	Footer Huge Final -- >
+
+		Send email from Web to email 
