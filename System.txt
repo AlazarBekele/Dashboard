@@ -35,6 +35,7 @@ First Page -->
 				- Have an id every verse
 				- Generate random number 1 - 30
 				- Change before 24 hour
+                
 
 	Third Banner -- >
 
