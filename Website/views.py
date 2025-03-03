@@ -6,7 +6,7 @@ from .models import Image_Container
 
 def index (request):
 
-    Image_data = Image_Container.objects.filter().order_by('image_name')
+    Image_data = Image_Container.objects.all()
 
     context = {
         'image' : Image_data
