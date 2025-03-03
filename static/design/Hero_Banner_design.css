@@ -32,7 +32,7 @@
 .Video_container_absolute {
     width: 90%;
     position: absolute;
-    z-index: 1;
+    z-index: 9;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -45,9 +45,39 @@
     height: 400px;
     background-color: transparent;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
 }
 
 .Container_1:hover {
+    background-color: white;
     box-shadow: 0px 4px 40px rgb(255, 255, 255);
     transition: 0.5s;
+}
+
+.Container_img_filter {
+    width: 450px;
+}
+
+.Container_1:hover .Container_img_filter {
+    transform: scale(1.2);
+    transform: translateY(-100px);
+    transition: 0.5s ease-in-out;
+}
+
+.proColor {
+    color: #3674B5;
+}
+
+.Text_anima {
+    opacity: 0;
+}
+
+.Container_1:hover .Text_anima {
+    transform: translateY(-100px);
+    transition: 0.5s ease-in-out;
+    opacity: 1;
 }
