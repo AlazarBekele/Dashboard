@@ -12,5 +12,4 @@ urlpatterns = [
     path('Donate', Donate, name='donate')
 
 ]
-
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

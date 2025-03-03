@@ -1,10 +1,18 @@
 from django.shortcuts import render
+from .models import Image_Container
+
 
 # Create your views here.
 
 def index (request):
+
+    Image_data = Image_Container.objects.all()
+
+    context = {
+        'image' : Image_data
+    }
     
-    return render (request, 'index.html')
+    return render (request, 'index.html', context=context)
 
 # Define the location of the html file
 

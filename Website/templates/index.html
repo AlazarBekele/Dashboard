@@ -85,66 +85,70 @@
 
         </div>
 
-        <div class="Second_banner_Container Second_banner ima">
+        {% for images in image %}
 
-            <div>
+            <div class="Second_banner_Container Second_banner" style="background-image: url('{{ images.picture.url }}');">
 
-                <div class="Card_container pt-5 pb-5">
+                <div>
 
-                    <div class="Main_Card d-flex justify-content-center align-items-center">
+                    <div class="Card_container pt-5 pb-5">
 
-                        <img class="Card_img" src="{% static 'SecondICON/bible.png' %}" alt=" ">
-    
-                    </div>
-    
-                    <div class="Main_Card d-flex justify-content-center align-items-center">
-    
-                        <img class="Card_img" src="{% static 'SecondICON/image3.png' %}" alt=" ">
-    
-                    </div>
-    
-                    <div class="Main_Card d-flex justify-content-center align-items-center">
-    
-                        <img class="Card_img" src="{% static 'SecondICON/image2.png' %}" alt=" ">
-    
-                    </div>
+                        <div class="Main_Card d-flex justify-content-center align-items-center">
 
-                </div>
-
-                <div class="bible_verse pt-3">
-
-                    <h1 class="roboto text-light bible_verse_title">Daily Bible Verse</h1>
-
-                    <div>
-
-                        <h5 class="bible_limiter text-light">"For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
-                        </h5>
-
-                        <h4 class="bible_location roboto pt-3">John 3:16</h4>
-
-                    </div>
-
-                    <div class="icon_container pt-4">
-
-                        <div class="Bible_icon_Container">
-
-                            <img class="Main_bible_icon" src="{% static 'Icon/Daily_Icon/right.png' %}" alt="">
-
+                            <img class="Card_img" src="{% static 'SecondICON/bible.png' %}" alt=" ">
+        
                         </div>
-                        
-                        <div class="Bible_icon_Container">
-
-                            <img class="Main_bible_icon" src="{% static 'Icon/Daily_Icon/left.png' %}" alt="">
-
+        
+                        <div class="Main_Card d-flex justify-content-center align-items-center">
+        
+                            <img class="Card_img" src="{% static 'SecondICON/image3.png' %}" alt=" ">
+        
+                        </div>
+        
+                        <div class="Main_Card d-flex justify-content-center align-items-center">
+        
+                            <img class="Card_img" src="{% static 'SecondICON/image2.png' %}" alt=" ">
+        
                         </div>
 
                     </div>
-    
+
+                    <div class="bible_verse pt-3">
+
+                        <h1 class="roboto text-light bible_verse_title">Daily Bible Verse</h1>
+
+                        <div>
+
+                            <h5 class="bible_limiter text-light">"For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
+                            </h5>
+
+                            <h4 class="bible_location roboto pt-3">John 3:16</h4>
+
+                        </div>
+
+                        <div class="icon_container pt-4">
+
+                            <div class="Bible_icon_Container">
+
+                                <img class="Main_bible_icon" src="{% static 'Icon/Daily_Icon/right.png' %}" alt="">
+
+                            </div>
+                            
+                            <div class="Bible_icon_Container">
+
+                                <img class="Main_bible_icon" src="{% static 'Icon/Daily_Icon/left.png' %}" alt="">
+
+                            </div>
+
+                        </div>
+        
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
+        {% endfor %}
 
         <div class="Third_banner shadow-lg p-3">
 
