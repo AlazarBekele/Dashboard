@@ -29,3 +29,7 @@ def Service (request):
 def Donate (request):
 
     return render (request, 'Include/Hero_Banner_Include/Donate.html')
+
+def upload_Page (request):
+
+    return render (request, 'Upload_bible.html')
