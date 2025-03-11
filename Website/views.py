@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Image_Container, Second_image
+from .form import up_bible
 
 
 # Create your views here.
@@ -31,5 +32,13 @@ def Donate (request):
     return render (request, 'Include/Hero_Banner_Include/Donate.html')
 
 def upload_Page (request):
+
+    bible_page = up_bible (request.POST or None)
+
+    if request.method == 'POST':
+        if bible_page.is_valid():
+
+            bible_page.save()
+
 
     return render (request, 'Upload_bible.html')
