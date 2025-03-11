@@ -84,6 +84,16 @@
     color: #3674B5;
 }
 
+.heading_size {
+    font-size: 54px;
+    color: #3674B5;
+}
+
+.heading_size_pro {
+    font-size: 40px;
+    color: #3674B5;
+}
+
 .Text_anima {
     opacity: 0;
 }
