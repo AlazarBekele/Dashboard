@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Image_Container, Second_image
-from .form import up_bible
+from .forms import up_bible
 
 
 # Create your views here.

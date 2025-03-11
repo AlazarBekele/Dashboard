@@ -6,6 +6,17 @@
     <title>Upload Page</title>
 </head>
 <body>
+
+    <div>
+
+        <form method="post">
+
+            {% csrf_token %}
+            {{ form.as_p }}
+
+        </form>
+
+    </div>
     
 </body>
 </html>
