@@ -72,6 +72,7 @@
 
 .Container_img_filter {
     width: 400px;
+    transform: translateY(55px);
 }
 
 .Container_1:hover .Container_img_filter {
