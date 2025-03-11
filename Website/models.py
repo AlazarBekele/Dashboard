@@ -18,3 +18,12 @@ class Second_image (models.Model):
 
     def __str__(self):
         return self.Second_img
+    
+
+class Bible_random (models.Model):
+
+    Bible_name = models.CharField (max_length=30)
+    Main_verse = models.TextField ()
+
+    def __str__(self):
+        return self.Bible_name
