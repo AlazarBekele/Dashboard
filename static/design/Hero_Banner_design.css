@@ -60,7 +60,7 @@
 }
 
 .Container_img_filter {
-    width: 450px;
+    width: 400px;
 }
 
 .Container_1:hover .Container_img_filter {
@@ -85,4 +85,8 @@
 
 .Sunday_title {
     font-size: 14px;
+}
+
+.about_program {
+    font-size: 7px;
 }
