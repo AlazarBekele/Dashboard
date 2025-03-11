@@ -40,5 +40,9 @@ def upload_Page (request):
 
             bible_page.save()
 
+    context = {
+        'form' : bible_page
+    }
 
-    return render (request, 'Upload_bible.html')
+
+    return render (request, 'Upload_bible.html', context=context)
