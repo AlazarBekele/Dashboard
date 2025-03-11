@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Image_Container
+from .models import Image_Container, Second_image
 
 
 # Create your views here.
@@ -7,9 +7,11 @@ from .models import Image_Container
 def index (request):
 
     Image_data = Image_Container.objects.all()
+    Second_Img = Second_image.objects.all()
 
     context = {
-        'image' : Image_data
+        'image' : Image_data,
+        'Sec_img' : Second_Img
     }
     
     return render (request, 'index.html', context=context)
