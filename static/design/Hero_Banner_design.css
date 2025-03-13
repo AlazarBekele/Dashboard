@@ -78,7 +78,7 @@
 .Container_1:hover .Container_img_filter {
     transform: scale(1.2);
     transform: translateY(-100px);
-    transition: 0.5s ease-in-out;
+    transition: 1s;
 }
 
 .proColor {
@@ -101,7 +101,7 @@
 
 .Container_1:hover .Text_anima {
     transform: translateY(-100px);
-    transition: 0.5s ease-in-out;
+    transition: 0.5s;
     opacity: 1;
 }
 
