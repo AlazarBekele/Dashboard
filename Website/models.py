@@ -31,7 +31,7 @@ class Bible_quote (models.Model):
 class Background_upload (models.Model):
 
     Name = models.CharField (max_length=20)
-    Image_main = models.ImageField (upload_to='photo/')
+    Image_main = models.ImageField (upload_to='photo/', null=True, blank=True)
 
     def __str__(self):
         return self.Name
