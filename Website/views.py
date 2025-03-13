@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import Image_Container, Second_image
-from .forms import up_bible
+from .models import Image_Container, Second_image, Bible_random
+from .forms import YourModelForm
 
 
 # Create your views here.
@@ -33,7 +33,7 @@ def Donate (request):
 
 def upload_Page (request):
 
-    bible_page = up_bible (request.POST or None)
+    bible_page = YourModelForm (request.POST or None)
 
     if request.method == 'POST':
         if bible_page.is_valid():

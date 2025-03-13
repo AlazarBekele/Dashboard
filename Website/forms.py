@@ -1,13 +1,14 @@
 from django import forms
-from .models import Bible_random
+from .models import *
 
-class up_bible (forms.ModelForm):
+class YourModelForm(forms.ModelForm):
     class Meta:
 
-        model : Bible_random
+        model = Bible_random 
         fields = '__all__'
 
     widgets = {
+
         'Bible_name' : forms.TextInput (attrs={
             'class' : 'form-control',
             'type' : 'text'
@@ -16,4 +17,5 @@ class up_bible (forms.ModelForm):
         'Main_verse' : forms.Textarea (attrs={
             'class' : 'form-control'
         })
+
     }
