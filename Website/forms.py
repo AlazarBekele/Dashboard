@@ -1,21 +1,20 @@
 from django import forms
-from .models import *
+from .models import Bible_quote
 
 class YourModelForm(forms.ModelForm):
     class Meta:
 
-        model = Bible_random 
+        model = Bible_quote 
         fields = '__all__'
 
     widgets = {
 
-        'Bible_name' : forms.TextInput (attrs={
+        'BibleName' : forms.TextInput(attrs={
             'class' : 'form-control',
-            'type' : 'text'
         }),
 
-        'Main_verse' : forms.Textarea (attrs={
+        'MainVerse' : forms.Textarea (attrs={
             'class' : 'form-control',
         })
-
+            
     }

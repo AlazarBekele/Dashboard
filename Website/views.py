@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from .models import Image_Container, Second_image, Bible_random
+from django.shortcuts import render, redirect
+from .models import Image_Container, Second_image
 from .forms import YourModelForm
 
 
@@ -39,6 +39,8 @@ def upload_Page (request):
         if bible_page.is_valid():
 
             bible_page.save()
+            return redirect ('index')
+            
 
     context = {
         'form' : bible_page

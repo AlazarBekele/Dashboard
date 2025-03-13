@@ -20,10 +20,10 @@ class Second_image (models.Model):
         return self.Second_img
     
 
-class Bible_random (models.Model):
+class Bible_quote (models.Model):
 
-    Bible_name = models.CharField (max_length=30)
-    Main_verse = models.TextField ()
+    BibleName = models.CharField (max_length=30, null=False)
+    MainVerse = models.TextField (null=False)
 
     def __str__(self):
         return self.Bible_name
