@@ -7,14 +7,14 @@ class YourModelForm(forms.ModelForm):
         model = Bible_quote 
         fields = '__all__'
 
-    widgets = {
+        widgets = {
 
-        'BibleName' : forms.TextInput(attrs={
-            'class' : 'form-control',
-        }),
+            'BibleName' : forms.TextInput(attrs={
+                'class' : 'form-control',
+            }),
 
-        'MainVerse' : forms.Textarea (attrs={
-            'class' : 'form-control',
-        })
-            
-    }
+            'MainVerse' : forms.Textarea (attrs={
+                'class' : 'form-control',
+            })
+                
+        }
