@@ -17,7 +17,7 @@ body {
 }
 
 .img_upload {
-    width: 400px;
+    width: 450px;
 }
 
 .upload_container_Main {
@@ -29,4 +29,10 @@ body {
 
 .upload_text {
     font-size: 70px;
+}
+
+.save_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
