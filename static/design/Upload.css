@@ -1,6 +1,21 @@
 
+body {
+    overflow: hidden;
+}
+
 .upload_container {
+
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img_upload {
+    width: 400px;
 }
