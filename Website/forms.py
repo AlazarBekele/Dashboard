@@ -10,11 +10,11 @@ class YourModelForm(forms.ModelForm):
         widgets = {
 
             'BibleName' : forms.TextInput(attrs={
-                'class' : 'form-control',
+                'class' : 'form-control roboto',
             }),
 
             'MainVerse' : forms.Textarea (attrs={
-                'class' : 'form-control',
+                'class' : 'form-control roboto_thin',
             })
                 
         }
