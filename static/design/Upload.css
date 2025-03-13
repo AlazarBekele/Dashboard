@@ -19,3 +19,13 @@ body {
 .img_upload {
     width: 400px;
 }
+
+.upload_container_Main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload_text {
+    font-size: 70px;
+}
