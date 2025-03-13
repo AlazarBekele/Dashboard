@@ -28,4 +28,10 @@ class Bible_quote (models.Model):
     def __str__(self):
         return self.BibleName
     
-class Background_upload (models.Model)
+class Background_upload (models.Model):
+
+    Name = models.CharField (max_length=20)
+    Image_main = models.ImageField (upload_to='photo/')
+
+    def __str__(self):
+        return self.Name
