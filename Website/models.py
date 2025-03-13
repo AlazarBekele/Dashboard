@@ -27,3 +27,5 @@ class Bible_quote (models.Model):
 
     def __str__(self):
         return self.BibleName
+    
+class Background_upload (models.Model)
