@@ -15,8 +15,7 @@ class YourModelForm(forms.ModelForm):
         }),
 
         'Main_verse' : forms.Textarea (attrs={
-            'class' : 'form-control'
+            'class' : 'form-control',
         })
-        
 
     }
