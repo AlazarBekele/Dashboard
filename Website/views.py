@@ -39,7 +39,6 @@ def upload_Page (request):
         if bible_page.is_valid():
 
             bible_page.save()
-            return redirect ('index')
             
 
     context = {

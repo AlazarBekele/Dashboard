@@ -26,4 +26,4 @@ class Bible_quote (models.Model):
     MainVerse = models.TextField (null=False)
 
     def __str__(self):
-        return self.Bible_name
+        return self.BibleName
