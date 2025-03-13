@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Image_Container, Second_image
+from .models import Image_Container, Second_image, Background_upload
 from .forms import YourModelForm
 
 
@@ -33,6 +33,7 @@ def Donate (request):
 
 def upload_Page (request):
 
+    feach_img = Background_upload.objects.all()
     bible_page = YourModelForm (request.POST or None)
 
     if request.method == 'POST':
@@ -41,7 +42,8 @@ def upload_Page (request):
             bible_page.save()
 
     context = {
-        'form' : bible_page
+        'form' : bible_page,
+        'feach' : feach_img
     }
 
 

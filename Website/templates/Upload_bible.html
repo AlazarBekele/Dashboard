@@ -36,36 +36,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
 </head>
-<body style="background-image: {% static 'IMG/upload/Background/background_image.jpg' %};">
+<body>
 
-    <div class="upload_container">
+    {% for feachs in feach %}
 
-        <div class="col-md-4 rounded p-3">
+        <div class="upload_container">
 
-            <div>
+            <div class="col-md-4 rounded p-3">
 
-                <h1 class="roboto">Upload Bible</h1>
+                <div>
+
+                    <h1 class="roboto">Upload Bible</h1>
+
+                </div>
+
+                <form method="post">
+
+                    {% csrf_token %}
+                    {{ form.as_p }}
+        
+                    <button type="submit" class="btn btn-primary">Save</button>
+        
+                </form>
 
             </div>
 
-            <form method="post">
+            <div>
 
-                {% csrf_token %}
-                {{ form.as_p }}
-    
-                <button type="submit" class="btn btn-primary">Save</button>
-    
-            </form>
+                <img class="img_upload" src="{% static 'IMG/upload/upload1.png' %}" alt="no">
+
+            </div>
 
         </div>
 
-        <div>
-
-            <img class="img_upload" src="{% static 'IMG/upload/upload1.png' %}" alt="no">
-
-        </div>
-
-    </div>
+    {% endfor %}
     
 </body>
 </html>
