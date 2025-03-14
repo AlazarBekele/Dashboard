@@ -23,7 +23,11 @@ def Regular_program (request):
 
     background_regular = Background_upload.objects.all()
 
-    return render (request, 'Include/Hero_Banner_Include/Regular_program.html')
+    context = {
+        'Regular_image' : background_regular
+    }
+
+    return render (request, 'Include/Hero_Banner_Include/Regular_program.html', context=context)
 
 def Service (request):
 
