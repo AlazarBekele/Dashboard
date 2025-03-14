@@ -10,7 +10,7 @@ def index (request):
 
     Image_data = Image_Container.objects.all()
     Second_Img = Second_image.objects.all()
-    Bible_data = Bible_quote.objects.order_by('-id').first()
+    Bible_data = Bible_quote.objects.all()
 
     context = {
         'image' : Image_data,

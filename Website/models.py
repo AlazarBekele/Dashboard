@@ -22,8 +22,9 @@ class Second_image (models.Model):
 
 class Bible_quote (models.Model):
 
-    BibleName = models.CharField (max_length=30, null=False)
-    MainVerse = models.TextField (null=False)
+    BibleName = models.CharField (max_length=30)
+    MainVerse = models.TextField ()
+    create = models.DateField (auto_created=True, auto_now_add=True, null=True, blank=True)
 
     def __str__(self):
         return self.BibleName
