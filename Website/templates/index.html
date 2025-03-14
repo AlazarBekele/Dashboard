@@ -125,8 +125,12 @@
 
                             <div>
 
-                                <h5 class="bible_limiter text-light">"For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
-                                </h5>
+                                {% for Bible_generates in Bible_generate %}
+
+                                    <h5 class="bible_limiter text-light" id="">{{ Bible_generates.MainVerse }}
+                                    </h5>
+
+                                {% endfor %}
 
                                 <h4 class="bible_location roboto pt-3">John 3:16</h4>
 
@@ -260,7 +264,7 @@
 
     </div>
 
-    <script src="{% static 'Function/app.js' %}"></script>
+    <!-- <script src="{% static 'Function/app.js' %}"></script> -->
     
 </body>
 </html>

@@ -4,7 +4,7 @@ from .views import index, Regular_program, Service, Donate, upload_Page
 from django.conf import settings
 from django.conf.urls.static import static
 
-from views import JSON_data_respond
+from .views import JSON_data_respond
 
 urlpatterns = [
     
@@ -13,7 +13,7 @@ urlpatterns = [
     path('Service/', Service, name='service'),
     path('Donate', Donate, name='donate'),
     path('upload/', upload_Page, name='upload_page'),
-    path('api/data/', JSON_data_respond, name='JSON_data_respond')
-    
+    path('data/', JSON_data_respond, name='JSON_data_respond')
+
 ]
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
