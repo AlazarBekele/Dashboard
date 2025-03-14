@@ -15,7 +15,7 @@ def index (request):
     context = {
         'image' : Image_data,
         'Sec_img' : Second_Img,
-        'Bible_generate' : Bible_data
+        'BibleGenerate' : Bible_data
     }
     
     return render (request, 'index.html', context=context)

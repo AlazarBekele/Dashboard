@@ -121,22 +121,18 @@
 
                         <h1 class="roboto text-light bible_verse_title">Daily Bible Verse</h1>
 
-                        {% for i in x %}
-
                             <div>
 
-                                {% for Bible_generates in Bible_generate %}
+                                {% for BibleGenerates in BibleGenerate %}
 
-                                    <h5 class="bible_limiter text-light" id="">{{ Bible_generates.MainVerse }}
+                                    <h5 class="bible_limiter text-light" id="">{{ BibleGenerates.MainVerse }}
                                     </h5>
+
+                                    <h4 class="bible_location roboto pt-3">John 3:16</h4>
 
                                 {% endfor %}
 
-                                <h4 class="bible_location roboto pt-3">John 3:16</h4>
-
                             </div>
-
-                        {% endfor %}
 
                         <div class="icon_container pt-4">
 
