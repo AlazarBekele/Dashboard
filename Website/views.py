@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
-from .models import Image_Container, Second_image, Background_upload
+from .models import Image_Container, Second_image, Background_upload, Bible_quote
 from .forms import YourModelForm
+from django.http import JsonResponse
 
 
 # Create your views here.
@@ -9,6 +10,7 @@ def index (request):
 
     Image_data = Image_Container.objects.all()
     Second_Img = Second_image.objects.all()
+    Bible_data = Bible_quote.objects.all()
 
     context = {
         'image' : Image_data,
@@ -54,3 +56,10 @@ def upload_Page (request):
 
 
     return render (request, 'Upload_bible.html', context=context)
+
+
+def JSON_data_respond (request):
+
+        data_list = list(Bible_quote.objects.values('BibleName', 'MainVerse'))
+
+    return 
