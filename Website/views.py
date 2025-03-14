@@ -60,6 +60,10 @@ def upload_Page (request):
 
 def JSON_data_respond (request):
 
-        data_list = list(Bible_quote.objects.values('BibleName', 'MainVerse'))
+    data_list = list(Bible_quote.objects.values('BibleName', 'MainVerse'))
 
-    return 
+    context = {
+        'data' : data_list
+    }
+
+    return JsonResponse (context=context)
