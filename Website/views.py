@@ -49,6 +49,7 @@ def upload_Page (request):
         if bible_page.is_valid():
 
             bible_page.save()
+            bible_page = YourModelForm()
 
     context = {
         'form' : bible_page,
