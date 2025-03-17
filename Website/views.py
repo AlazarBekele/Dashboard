@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Image_Container, Second_image, Background_upload, Bible_quote
+from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service
 from .forms import YourModelForm
 from django.http import JsonResponse
 
@@ -32,9 +32,15 @@ def Regular_program (request):
 
     return render (request, 'Include/Hero_Banner_Include/Regular_program.html', context=context)
 
-def Service (request):
+def Service_container (request):
 
-    return render (request, 'Include/Hero_Banner_Include/Services.html')
+    Service_back = Service.objects.all()
+
+    context = {
+        'Service_img' : Service_back
+    }
+
+    return render (request, 'Include/Hero_Banner_Include/Services.html', context=context)
 
 def Donate (request):
 
