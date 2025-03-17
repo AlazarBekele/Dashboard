@@ -36,3 +36,12 @@ class Background_upload (models.Model):
 
     def __str__(self):
         return self.Name
+    
+
+class Service (models.Model):
+
+    Name = models.CharField (max_length=20)
+    Picture = models.ImageField (upload_to='photo/Service')
+
+    def __str__(self):
+        return self.Name
