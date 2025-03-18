@@ -57,3 +57,9 @@
     height: 200px;
     color: black;
 }
+
+.Services_Btn_Container {
+    display: grid;
+    grid-template-columns: 270px 240px;
+    row-gap: 70px;
+}
