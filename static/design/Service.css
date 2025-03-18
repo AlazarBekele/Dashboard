@@ -63,3 +63,8 @@
     grid-template-columns: 270px 240px;
     row-gap: 70px;
 }
+
+.Service_img_one {
+    width: 200px;
+    height: 200px;
+}
