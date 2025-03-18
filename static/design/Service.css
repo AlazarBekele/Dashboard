@@ -77,6 +77,16 @@
     filter: blur(3px);
 }
 
+.Circle_container {
+    width: 510px;
+    height: 470px;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Main_circle {
     border: none;
     width: 250px;
