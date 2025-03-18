@@ -10,6 +10,13 @@ First Page -->
 
 			List All Service -- Finsh Today
 
+				- Service List
+
+					* Lord's Supper --
+					* Children --
+					* Worship --
+					* Media Team -- Logo
+
 		Donate -->
 
 			Know
