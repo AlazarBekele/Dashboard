@@ -12,3 +12,9 @@
     left: 0;
     z-index: -1;
 }
+
+.horizontal_line {
+    border: 1px solid white;
+    width: 900px;
+    transform: rotate(90deg);
+}
