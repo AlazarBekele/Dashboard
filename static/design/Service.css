@@ -23,6 +23,16 @@
     width: 100px;
 }
 
+.Main_Title_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Line_ccontainer {
+    width: 500px;
+}
+
 .Service_Title {
     font-size: 100px;
 }
