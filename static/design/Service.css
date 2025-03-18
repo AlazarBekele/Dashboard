@@ -78,9 +78,8 @@
 }
 
 .Circle_container {
-    width: 510px;
+    width: 480px;
     height: 470px;
-    background-color: black;
     position: absolute;
     display: flex;
     justify-content: center;
