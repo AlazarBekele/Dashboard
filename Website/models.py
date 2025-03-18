@@ -38,7 +38,7 @@ class Background_upload (models.Model):
         return self.Name
     
 
-class Service_Container (models.Model):
+class Service_Container_img (models.Model):
 
     Name = models.CharField (max_length=20)
     Picture = models.ImageField (upload_to='photo/Service')
