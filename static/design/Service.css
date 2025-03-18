@@ -49,3 +49,11 @@
 .Service_Title {
     font-size: 100px;
 }
+
+.Services_Btn {
+    border: none;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    color: black;
+}
