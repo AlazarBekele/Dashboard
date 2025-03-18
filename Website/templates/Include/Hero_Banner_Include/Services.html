@@ -12,23 +12,17 @@
     <link rel="stylesheet" href="{% static 'design/Service.css' %}">
 
 </head>
-    
 <body>
 
-    {% for Service_backs in Service_back %}
-    
-        <div style="background-image: url(' {{ Service_backs.Picture.url }} ');" class="All_container">
+    {% for Service_imgs in Service_img %}
 
-            <div>
+        <div style="background-image: url(' {{ Service_imgs.Picture.url }} ');">
 
 
-
-            </div>
 
         </div>
 
     {% endfor %}
 
 </body>
-
 </html>

@@ -32,6 +32,8 @@ def Regular_program (request):
 
     return render (request, 'Include/Hero_Banner_Include/Regular_program.html', context=context)
 
+
+
 def Service_container (request):
 
     Service_img = Service_data.objects.all()
@@ -42,9 +44,13 @@ def Service_container (request):
 
     return render (request, 'Include/Hero_Banner_Include/Services.html', context=context)
 
+
+
 def Donate (request):
 
     return render (request, 'Include/Hero_Banner_Include/Donate.html')
+
+
 
 def upload_Page (request):
 
@@ -64,6 +70,8 @@ def upload_Page (request):
 
 
     return render (request, 'Upload_bible.html', context=context)
+
+
 
 
 def JSON_data_respond (request):
