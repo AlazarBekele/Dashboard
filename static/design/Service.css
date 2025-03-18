@@ -74,4 +74,5 @@
     background-size: cover;
     width: 150px;
     height: 150px;
+    filter: blur(3px);
 }
