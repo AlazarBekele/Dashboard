@@ -76,3 +76,11 @@
     height: 150px;
     filter: blur(3px);
 }
+
+.Main_circle {
+    border: none;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+}
