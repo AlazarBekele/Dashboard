@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_Container_img
+from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_data
 from .forms import YourModelForm
 from django.http import JsonResponse
 
@@ -34,10 +34,10 @@ def Regular_program (request):
 
 def Service_container (request):
 
-    Service_back = Service_Container_img.objects.all()
+    Service_img = Service_data.objects.all()
 
     context = {
-        'Service_back' : Service_back
+        'Service_img' : Service_img
     }
 
     return render (request, 'Include/Hero_Banner_Include/Services.html', context=context)
