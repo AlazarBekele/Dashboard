@@ -41,7 +41,7 @@ class Background_upload (models.Model):
 class Service_data (models.Model):
 
     Name = models.CharField (max_length=20)
-    Picture = models.ImageField (upload_to='photo/Service')
+    Picture = models.ImageField (upload_to='photo/', null=True, blank=True)
 
     def __str__(self):
         return self.Name
