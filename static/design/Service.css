@@ -93,3 +93,7 @@
     border-radius: 50%;
     background-color: white;
 }
+
+.Service_img_one:hover {
+    transform: scale(2);
+}
