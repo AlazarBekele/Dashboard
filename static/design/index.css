@@ -22,6 +22,10 @@ body {
     z-index: 1;
 }
 
+.first_container {
+    z-index: 2;
+}
+
 .SizeLogo {
     width: 150px;
 }

@@ -78,8 +78,8 @@
 }
 
 .Circle_container {
-    width: 480px;
-    height: 470px;
+    width: 250px;
+    height: 250px;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -92,8 +92,4 @@
     height: 250px;
     border-radius: 50%;
     background-color: white;
-}
-
-.Service_img_one:hover {
-    transform: scale(2);
 }
