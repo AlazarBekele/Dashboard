@@ -11,12 +11,14 @@ def index (request):
     Image_data = Image_Container.objects.all()
     Second_Img = Second_image.objects.all()
     Bible_data = Bible_quote.objects.order_by('-id').first()
+    previous_bible = Bible_quote.objects.all()
 
 
     context = {
         'image' : Image_data,
         'Sec_img' : Second_Img,
-        'BibleGenerate' : Bible_data
+        'BibleGenerate' : Bible_data,
+        'previous_bible' : previous_bible
     }
     
     return render (request, 'index.html', context=context)
