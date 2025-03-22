@@ -63,6 +63,7 @@ def upload_Page (request):
 
             bible_page.save()
             bible_page = YourModelForm()
+            return redirect ('index')
 
     context = {
         'form' : bible_page,
