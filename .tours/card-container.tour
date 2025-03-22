@@ -1,0 +1,12 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Card Container",
+  "steps": [
+    {
+      "file": "Website/templates/index.html",
+      "description": "Loop all qoute\n\n        Try to Full screen width",
+      "line": 277
+    }
+  ],
+  "ref": "87a6c7e1d26ccb49d3297f8c19feb0b8cc623a71"
+}
