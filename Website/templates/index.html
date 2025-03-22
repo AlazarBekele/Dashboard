@@ -125,14 +125,14 @@
 
                             <div>
 
-                                {% for BibleGenerates in BibleGenerate %}
+                                {% comment %} {% for BibleGenerate_title in BibleGenerate %} {% endcomment %}
 
-                                    <h5 class="bible_limiter text-light" id="">{{ BibleGenerates.MainVerse }}
+                                    <h5 class="bible_limiter text-light" id="">{{ BibleGenerate.MainVerse }}
                                     </h5>
 
-                                    <h4 class="bible_location roboto pt-3">{{ BibleGenerates.BibleName }}</h4>
+                                    <h4 class="bible_location roboto pt-3">{{ BibleGenerate_title.BibleName }}</h4>
 
-                                {% endfor %}
+                                {% comment %} {% endfor %} {% endcomment %}
 
                             </div>
 
