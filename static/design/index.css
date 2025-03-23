@@ -24,6 +24,10 @@ body {
 
 .first_container {
     z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .SizeLogo {
@@ -206,7 +210,7 @@ body {
 
 .icon_container {
     width: 300px;
-    height: 60pxs;
+    height: 60px;
 }
 
 .Previous_btn {
