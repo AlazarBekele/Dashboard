@@ -23,7 +23,7 @@ body {
 }
 
 .first_container {
-    z-index: 2;
+    z-index: 9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
