@@ -17,6 +17,8 @@ First Page -->
 					* Worship --
 					* Media Team -- Logo
 
+					-- When click the out side blur image
+
 		Donate -->
 
 			Know
@@ -60,3 +62,10 @@ First Page -->
 https://alazar-bekele.imgbb.com/ Free image depoloyer
 
 Fix the Webpage Size
+
+Make Tutorial for Website
+
+	- When the user is new the Tutor is avalible
+
+		* is not login
+		* is login not
