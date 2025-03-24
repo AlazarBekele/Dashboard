@@ -106,7 +106,7 @@
 
             <div class="Second_banner_Container Second_banner" style="background-image: url('{{ Sec.Second_picture.url }}');">
 
-                <div class="mt-4">
+                <div class="Second_container">
 
                     <div class="Card_container pt-5 pb-5">
 
@@ -138,7 +138,7 @@
 
                                 {% comment %} {% for BibleGenerate_title in BibleGenerate %} {% endcomment %}
 
-                                    <h5 class="bible_limiter text-light" id="">{{ BibleGenerate.MainVerse }}
+                                    <h5 class="bible_limiter">{{ BibleGenerate.MainVerse }}
                                     </h5>
 
                                     <h6 class="bible_location roboto pt-3">{{ BibleGenerate.BibleName }}</h6>
@@ -151,13 +151,11 @@
 
                             <!-- Button trigger modal -->
 
-                            <button type="button" class="btn btn-primary Previous_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                                 Previous
 
                             </button>
-
-                            <button class="button-28" role="button">Button 28</button>
 
                         </div>
         
