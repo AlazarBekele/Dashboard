@@ -147,6 +147,11 @@ body {
 
 /*  */
 
+.Second_banner_Container {
+    width: 100%;
+    height: 100vh;
+}
+
 .Second_banner {
     background-image: url('');
     height: 100vh;
@@ -232,11 +237,6 @@ body {
 .icon_container {
     width: 300px;
     height: 60px;
-}
-
-.Previous_btn {
-    width: 200px;
-    height: 50px;
 }
 
 .Main_bible_icon {
@@ -366,6 +366,49 @@ body {
     align-items: center;
 }
 
-.Previous_btn {
-    height: 100px;
+/* Button */
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
