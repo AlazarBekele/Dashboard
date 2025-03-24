@@ -29,8 +29,3 @@ function FetchData() {
     setInterval (FetchData, 5000)
 
     FetchData();
-
-
-//  Service Add class
-
-    let Services_Btn_container = document.getElementById('Services_id').classList.add('Update_service');

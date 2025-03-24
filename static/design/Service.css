@@ -78,13 +78,12 @@
 }
 
 .Circle_container {
-    /* width: 490px;
+    width: 490px;
     height: 490px;
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center; */
-    display: none;
+    align-items: center;
 }
 
 .Main_circle {
