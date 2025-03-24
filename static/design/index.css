@@ -252,6 +252,11 @@ body {
     align-items: end;
 }
 
+.Previous_button:hover {
+    transition: 0.5s;
+    transform: scale(1.4);
+}
+
 .Main_bible_icon {
     width: 40px;
 }
