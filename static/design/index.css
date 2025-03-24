@@ -14,6 +14,18 @@ body {
     cursor: url('https://img.icons8.com/material-rounded/24/228BE6/blue-pointer.png') 3 3 , auto;
 }
 
+.Main_logo_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo_container {
+
+}
+
 .Loading_Session {
     width: 100%;
     height: 100vh;
