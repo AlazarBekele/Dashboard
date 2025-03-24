@@ -69,3 +69,6 @@ Make Tutorial for Website
 
 		* is not login
 		* is login not
+
+
+Add Main Background image when the Hero banner's is caming.
