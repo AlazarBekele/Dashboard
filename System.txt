@@ -13,7 +13,10 @@ First Page -->
 				- Service List
 
 					* Lord's Supper --
-					* Children --
+					* Edir --
+
+						- When you need pay the edir click the image
+						
 					* Worship --
 					* Media Team -- Logo
 
@@ -29,8 +32,7 @@ First Page -->
 
 	Social Icon -- > Link All Account
 
-
-	Second Banner -->
+Second Banner -->
 
 		Icons_cards -->
 		
@@ -46,15 +48,15 @@ First Page -->
 				- Change before 24 hour
                 
 
-	Third Banner -- >
+Third Banner -- >
 
 		Increament the number show in html
 
-	Fourth Banner -- >
+Fourth Banner -- >
 
 		Scrap the recent video using date to this page
 
-	Footer Huge Final -- >
+Footer Huge Final -- >
 
 		Send email from Web to email 
 
