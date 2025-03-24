@@ -13,7 +13,7 @@ First Page -->
 				- Service List
 
 					* Lord's Supper --
-					* Edir --
+					* Edir
 
 						- When you need pay the edir click the image
 						
