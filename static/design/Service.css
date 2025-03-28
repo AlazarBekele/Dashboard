@@ -99,3 +99,11 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
+.Second_bar_container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
