@@ -6,21 +6,13 @@
     background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-    background: #ffffff;
+    background: #2f6cbc;
 }
 
 .All_card_container {
-    width: 100%;
-    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     height: 100vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,13 +20,13 @@
 }
 
 .bar_container {
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .first_banner_container {
-    width: 200px;
+    width: 70%;
+    height: 80vh;
+    background-color: black;
 }
