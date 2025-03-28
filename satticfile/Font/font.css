@@ -17,3 +17,11 @@
     font-variation-settings:
       "wdth" 100;
   }
+
+
+  .dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
