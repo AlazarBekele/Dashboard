@@ -55,6 +55,9 @@
 .Service_btn_containers {
     width: 100%;
     height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Main_btn {
@@ -64,4 +67,17 @@
     backdrop-filter: blur(20px);
     background-color: transparent;
     font-size: 30px;
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.Main_btn:hover {
+    transform: scale(1.2);
+}
+
+.btn_container {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    row-gap: 50px;
 }
