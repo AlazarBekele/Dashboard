@@ -58,5 +58,10 @@
 }
 
 .Main_btn {
-    
+    width: 200px;
+    height: 130px;
+    border: none;
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    font-size: 30px;
 }
