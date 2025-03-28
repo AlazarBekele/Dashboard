@@ -25,4 +25,5 @@
     width: 50%;
     height: 100vh;
     backdrop-filter: blur(20px);
+    overflow-y: auto;
 }
