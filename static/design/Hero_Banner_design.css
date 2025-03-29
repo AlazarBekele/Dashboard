@@ -21,6 +21,8 @@ body {
     align-items: center;
     flex-direction: column;
     animation: Scroll 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .first_banner_container {
