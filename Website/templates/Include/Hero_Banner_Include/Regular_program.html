@@ -39,35 +39,54 @@
 
 </head>
 
-    <body>
+    {% for Regular_images in Regular_image %}
 
-        {% for Regular_images in Regular_image %}
+        <body style="background-image: url(' {{ Regular_images.Image_main.url }} ');">
 
-            <div class="All_card_container" style="background-image: url(' {{ Regular_images.Image_main.url }} ');">
+                <div class="All_card_container">
 
-                <div class="bar_container">
+                    <div class="bar_container">
 
-                    <div class="first_banner_container">
+                        <div class="image_container">
 
-                        <h5 class="dancing-script">Worship</h5>
-                        <h1>Sunday</h1>
+                            <img src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
 
-                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corrupti cupiditate a unde officia ab consequatur architecto consequuntur qui distinctio temporibus dolores id consectetur vitae maiores aperiam, ut ex adipisci.</p>
-                        
+                        </div>
+
+                        <div class="first_banner_container">
+
+                            <h1 class="dancing-script Program_title">Worship</h1>
+                            <h3>Sunday</h3>
+
+                            <p class="bar_title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corrupti cupiditate a unde officia ab consequatur architecto consequuntur qui distinctio temporibus dolores id consectetur vitae maiores aperiam, ut ex adipisci.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corrupti cupiditate a unde officia ab consequatur architecto consequuntur qui distinctio temporibus dolores id consectetur vitae maiores aperiam, ut ex adipisci.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corrupti cupiditate a unde officia ab consequatur architecto consequuntur qui distinctio temporibus dolores id consectetur vitae maiores aperiam, ut ex adipisci.</p>
+                            
+                        </div>
+
                     </div>
 
-                    <div>
+                    <div class="bar_container">
 
-                        <img src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
+                        <div class="image_container">
+
+                            <img src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
+
+                        </div>
+
+                        <div class="first_banner_container">
+
+                            <h1 class="dancing-script Program_title">Worship</h1>
+                            <h3>Sunday</h3>
+
+                            <p class="bar_title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corrupti cupiditate a unde officia ab consequatur architecto consequuntur qui distinctio temporibus dolores id consectetur vitae maiores aperiam, ut ex adipisci.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corrupti cupiditate a unde officia ab consequatur architecto consequuntur qui distinctio temporibus dolores id consectetur vitae maiores aperiam, ut ex adipisci.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corrupti cupiditate a unde officia ab consequatur architecto consequuntur qui distinctio temporibus dolores id consectetur vitae maiores aperiam, ut ex adipisci.</p>
+                            
+                        </div>
 
                     </div>
-
+                    
                 </div>
-                
-            </div>
+            
+        </body>
 
-        {% endfor %}
-        
-    </body>
+    {% endfor %}
 
 </html>
