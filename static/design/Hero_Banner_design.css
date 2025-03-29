@@ -16,13 +16,14 @@ body {
 
 .bar_container {
     width: 70%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    animation: Scroll 5s linear;
+    animation: Scroll 2s linear;
     animation-timeline: view();
-    animation-range: entry 0;
+    animation-range: entry 10% cover 40%;
 }
 
 .first_banner_container {
@@ -51,14 +52,16 @@ body {
     from {
 
         opacity: 0;
-        scale: 0.5;
+        /* scale: 0.5; */
+        transform: translateX(-200px);
 
     }
 
     to {
 
         opacity: 1;
-        scale: 1;
+        /* scale: 1; */
+        transform: translateX(0px);
 
     }
 
