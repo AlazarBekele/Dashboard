@@ -87,3 +87,8 @@ def JSON_data_respond (request):
     }
 
     return JsonResponse (context=context)
+
+
+def post_News (request):
+
+    return render (request, 'Include/DailyNews.html')
