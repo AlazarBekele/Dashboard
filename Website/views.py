@@ -91,4 +91,4 @@ def JSON_data_respond (request):
 
 def post_News (request):
 
-    return render (request, 'Include/DailyNews.html')
+    return render (request, 'Include/News/DailyNews.html')
