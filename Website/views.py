@@ -91,4 +91,10 @@ def JSON_data_respond (request):
 
 def post_News (request):
 
-    return render (request, 'Include/News/DailyNews.html')
+    background_regular = Background_upload.objects.all()
+
+    context = {
+        'Regular_image' : background_regular
+    }
+
+    return render (request, 'Include/News/DailyNews.html', context=context)
