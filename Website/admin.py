@@ -1,5 +1,13 @@
 from django.contrib import admin
-from .models import Image_Container, Second_image, Bible_quote, Background_upload, Service_data, News_catagory, News_post
+from .models import (
+    Image_Container,
+    Second_image,
+    Bible_quote,
+    Background_upload,
+    Service_data,
+    News_catagory,
+    News_post
+)
 
 # Register your models here.
 
