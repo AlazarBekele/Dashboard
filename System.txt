@@ -30,6 +30,24 @@ First Page -->
 
 			Modal
 
+		Daily_news -->
+
+			Post page
+
+				Post Item
+
+					Photo
+					video
+					file / PDF, Word, Execl etc...
+					Audio
+
+				Title
+
+				Description
+
+				Reaction
+
+
 	Social Icon -- > Link All Account
 
 Second Banner -->

@@ -10,5 +10,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px 0px 30px;
+    padding: 0px 90px 0px 60px;
+}
+
+.Loop_Container {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Main_loop {
+    text-decoration: none;
 }
