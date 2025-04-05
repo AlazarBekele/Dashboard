@@ -246,7 +246,7 @@ body {
 
 .icon_container {
     width: 300px;
-    height: 250px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: end;
