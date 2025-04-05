@@ -100,3 +100,8 @@ def post_News (request):
     }
 
     return render (request, 'Include/News/DailyNews.html', context=context)
+
+
+def news_upload_link (request):
+
+    return render (request, 'Include/News/News_upload_page.html')
