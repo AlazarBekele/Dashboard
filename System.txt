@@ -55,6 +55,8 @@ First Page -->
 
 						When write the text in text area & click the comment Btn save in the Store_comment Data base
 
+				you got the upload page link in the other uploads bottom
+
 
 	Social Icon -- > Link All Account
 
