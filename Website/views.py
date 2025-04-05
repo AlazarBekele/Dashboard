@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_data, News_catagory
-from .forms import YourModelForm
+from .forms import YourModelForm, News_upload
 from django.http import JsonResponse
 
 
@@ -104,4 +104,16 @@ def post_News (request):
 
 def news_upload_link (request):
 
-    return render (request, 'Include/News/News_upload_page.html')
+    Form_news = News_upload (request.POST or None)
+
+    if request.method == 'POST':
+        if Form_news.is_valid():
+
+            Form_news.save()
+            Form_news = News_upload()
+
+    context = {
+        'form' : Form_news
+    }
+
+    return render (request, 'Include/News/News_upload_page.html', context=context)

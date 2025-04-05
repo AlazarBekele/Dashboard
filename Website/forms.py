@@ -24,7 +24,7 @@ class YourModelForm(forms.ModelForm):
 
 
 
-class News_upload (forms.ModelForm):
+class News_upload (forms.Form):
 
     model = News_post
     fields = [ 'title', 'Post_items', 'Descrtion', 'category' ]
