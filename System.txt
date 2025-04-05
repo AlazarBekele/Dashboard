@@ -47,6 +47,14 @@ First Page -->
 
 				Reaction
 
+					When click the Btn count & display in the User display by number
+
+						like 👍23k
+
+					comment
+
+						When write the text in text area & click the comment Btn save in the Store_comment Data base
+
 
 	Social Icon -- > Link All Account
 
