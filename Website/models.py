@@ -62,9 +62,12 @@ class News_post (models.Model):
     title = models.CharField(max_length=30)
     Post_items = models.FileField (upload_to='DailyPost/')
     Descrtion = models.TextField ()
-    Reaction_container = models.IntegerField
     post_date = models.DateTimeField (auto_created=True, auto_now_add=True)
     category = models.ForeignKey (News_catagory, on_delete=models.SET_NULL, null=True, blank=True)
 
     def __str__(self):
         return self.title
+    
+    # Ues in Feeling exprestion
+
+# Reaction_container = models.IntegerField

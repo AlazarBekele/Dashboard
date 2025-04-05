@@ -27,7 +27,7 @@ class YourModelForm(forms.ModelForm):
 class News_upload (forms.ModelForm):
 
     model = News_post
-    fields = '__all__'
+    fields = [ 'title', 'Post_items', 'Descrtion', 'category' ]
     lables = { 'title' : '' }
 
     widgets = {
@@ -36,24 +36,16 @@ class News_upload (forms.ModelForm):
             'class' : 'form-control roboto'
         }),
 
-        'Post_items' : forms.TextInput(attrs={
+        'Post_items' : forms.ClearableFileInput(attrs={
             'class' : 'form-control roboto'
         }),
 
-        'Descrtion' : forms.TextInput(attrs={
+        'Descrtion' : forms.Textarea(attrs={
             'class' : 'form-control roboto'
         }),
 
-        'Reaction_container' : forms.TextInput(attrs={
-            'class' : 'form-control roboto'
-        }),
-
-        'title' : forms.TextInput(attrs={
-            'class' : 'form-control roboto'
-        }),
-
-        'title' : forms.TextInput(attrs={
-            'class' : 'form-control roboto'
+        'category' : forms.TextInput(attrs={
+            'class' : 'input-group'
         }),
 
     }
