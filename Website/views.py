@@ -110,6 +110,7 @@ def news_upload_link (request):
         if Form_news.is_valid():
 
             Form_news.save()
+            print(Form_news)
             Form_news = News_upload()
 
     context = {
