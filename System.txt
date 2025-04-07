@@ -41,6 +41,8 @@ First Page -->
 					file / PDF, Word, Execl etc...
 					Audio
 
+				when Finsh upload got loading effect
+
 				Title
 
 				Description
