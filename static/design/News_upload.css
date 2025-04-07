@@ -8,6 +8,11 @@
 }
 
 .Upload_container {
-    width: 600px;
-    height: 500px;
+    width: 400px;
+    height: 300px;
+}
+
+.upload_IMG {
+    width: 400px;
+    height: 400px;
 }
