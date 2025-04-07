@@ -104,7 +104,7 @@ def post_News (request):
 
 def news_upload_link (request):
 
-    Form_news = News_upload (request.POST or None)
+    Form_news = News_upload (request.POST, request.FILES or None)
 
     if request.method == 'POST':
         if Form_news.is_valid():

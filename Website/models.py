@@ -60,8 +60,8 @@ class News_catagory (models.Model):
 class News_post (models.Model):
 
     title = models.CharField(max_length=30)
-    Post_items = models.FileField (upload_to='DailyPost/')
-    Descrtion = models.TextField ()
+    Post_items = models.FileField (upload_to='File/', null=True, blank=True)
+    Descrption = models.TextField ()
     post_date = models.DateTimeField (auto_created=True, auto_now_add=True)
     category = models.ForeignKey (News_catagory, on_delete=models.SET_NULL, null=True, blank=True)
 

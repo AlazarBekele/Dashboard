@@ -24,28 +24,36 @@ class YourModelForm(forms.ModelForm):
 
 
 
-class News_upload (forms.Form):
+class News_upload (forms.ModelForm):
+    class Meta:
 
-    model = News_post
-    fields = [ 'title', 'Post_items', 'Descrtion', 'category' ]
-    lables = { 'title' : '' }
+        model = News_post
+        fields = [ 'title', 'Post_items', 'Descrption', 'category' ]
+        labels = {
+            'title': '',
+            'Post_items' : '',
+            'Descrption' : '',
+            'category' : ''
+        }
 
-    widgets = {
+        widgets = {
 
-        'title' : forms.TextInput(attrs={
-            'class' : 'form-control roboto'
-        }),
+            'title' : forms.TextInput(attrs={
+                'class' : 'form-control roboto',
+                'placeholder' : 'Enter Title'
+            }),
 
-        'Post_items' : forms.ClearableFileInput(attrs={
-            'class' : 'form-control roboto'
-        }),
+            'Post_items' : forms.ClearableFileInput(attrs={
+                'class' : 'form-control roboto',
+            }),
 
-        'Descrtion' : forms.Textarea(attrs={
-            'class' : 'form-control roboto'
-        }),
+            'Descrption' : forms.Textarea(attrs={
+                'class' : 'form-control roboto',
+                'placeholder' : 'What in your mind?'
+            }),
 
-        'category' : forms.TextInput(attrs={
-            'class' : 'input-group'
-        }),
+            'category' : forms.Select(attrs={
+                'class' : 'form-control roboto',
+            }),
 
-    }
+        }
