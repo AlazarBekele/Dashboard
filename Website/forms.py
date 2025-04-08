@@ -28,12 +28,12 @@ class News_upload (forms.ModelForm):
     class Meta:
 
         model = News_post
-        fields = [ 'title', 'Post_items', 'Descrption', 'category' ]
+        fields = [ 'title', 'Post_img', 'Descrption', 'category' ]
         labels = {
             'title': '',
-            'Post_items' : '',
             'Descrption' : '',
-            'category' : ''
+            'category' : '',
+            'Post_img' : ''
         }
 
         widgets = {
@@ -43,7 +43,7 @@ class News_upload (forms.ModelForm):
                 'placeholder' : 'Enter Title'
             }),
 
-            'Post_items' : forms.ClearableFileInput(attrs={
+            'Post_img' : forms.ClearableFileInput (attrs={
                 'class' : 'form-control roboto',
             }),
 

@@ -93,7 +93,6 @@ def post_News (request):
 
     background_regular = Background_upload.objects.all()
     data_loop = News_catagory.objects.all()
-    # News_dis = News_post.objects.order_by('-id').first()
     News_dis = News_post.objects.all()
 
     context = {

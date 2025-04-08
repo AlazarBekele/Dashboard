@@ -60,10 +60,11 @@ class News_catagory (models.Model):
 class News_post (models.Model):
 
     title = models.CharField(max_length=30)
-    Post_items = models.FileField (upload_to='File/', null=True, blank=True)
     Descrption = models.TextField ()
     post_date = models.DateTimeField (auto_created=True, auto_now_add=True)
     category = models.ForeignKey (News_catagory, on_delete=models.SET_NULL, null=True, blank=True)
+    Post_img = models.ImageField (upload_to='Photo/')
+    # Post_items = models.FileField (upload_to='File/', null=True, blank=True)
 
     def __str__(self):
         return self.title
