@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_data, News_catagory
+from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_data, News_catagory, News_post
 from .forms import YourModelForm, News_upload
 from django.http import JsonResponse
 
@@ -93,10 +93,13 @@ def post_News (request):
 
     background_regular = Background_upload.objects.all()
     data_loop = News_catagory.objects.all()
+    # News_dis = News_post.objects.order_by('-id').first()
+    News_dis = News_post.objects.all()
 
     context = {
         'Regular_image' : background_regular,
-        'data_loop' : data_loop
+        'data_loop' : data_loop,
+        'News_dis' : News_dis
     }
 
     return render (request, 'Include/News/DailyNews.html', context=context)

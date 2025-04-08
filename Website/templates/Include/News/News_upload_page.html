@@ -64,9 +64,13 @@
                 {% csrf_token %}
                 {{ form.as_p }}
 
-                <button type="submit" class="btn btn-success">Post</button>
+                <div class="">
 
-                <button type="submit" class="btn btn-primary" onclick="Redirect_page()">Show News</button>
+                    <button type="submit" class="btn btn-success w-25 me-2">Post</button>
+
+                    <button type="submit" class="btn btn-primary" onclick="Redirect_page()">Show News</button>
+
+                </div>
 
             </form>
 
