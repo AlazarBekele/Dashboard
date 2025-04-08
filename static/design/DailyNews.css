@@ -23,3 +23,18 @@ body {
 .Main_loop {
     text-decoration: none;
 }
+
+.Image_container {
+    width: 600px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.Img_width {
+    max-width: 100%;
+    height: auto;
+}
