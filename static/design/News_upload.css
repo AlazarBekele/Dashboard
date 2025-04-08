@@ -27,4 +27,12 @@
     height: 100vh;
     position: absolute;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load_size {
+    width: 70px;
+    height: 70px;
 }
