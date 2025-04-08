@@ -23,16 +23,20 @@
 }
 
 .Loading_container {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
 }
 
 .load_size {
     width: 70px;
     height: 70px;
+}
+
+.Loading_on {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }

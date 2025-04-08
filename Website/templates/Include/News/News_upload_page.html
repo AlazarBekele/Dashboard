@@ -64,7 +64,9 @@
                 {% csrf_token %}
                 {{ form.as_p }}
 
-                <button type="submit" class="btn btn-primary">Post</button>
+                <button type="submit" class="btn btn-success">Post</button>
+
+                <button type="submit" class="btn btn-primary" onclick="Redirect_page()">Show News</button>
 
             </form>
 
@@ -74,13 +76,18 @@
 
     <script>
 
-        function loading_function() {
+        function Redirect_page() {
 
             setTimeout ( function () {
 
                 window.location.href = " {% url 'news' %} ";
 
-            }, 3000)
+            }, 3000);
+
+            let loading = document.getElementById ('loading_function')
+
+            loading.classList.add ('Loading_on')      
+            loading.classList.remove ('Loading_container')      
 
         }
 
