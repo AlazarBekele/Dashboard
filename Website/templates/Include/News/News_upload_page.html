@@ -78,13 +78,15 @@
 
         function Redirect_page() {
 
+            let loading = document.getElementById ('loading_function')
+
             setTimeout ( function () {
 
                 window.location.href = " {% url 'news' %} ";
+                loading.classList.remove ('Loading_on')
+                loading.classList.add ('Loading_container')
 
             }, 3000);
-
-            let loading = document.getElementById ('loading_function')
 
             loading.classList.add ('Loading_on')      
             loading.classList.remove ('Loading_container')      
