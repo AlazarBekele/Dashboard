@@ -343,8 +343,7 @@ body {
 } */
 
 .Footer_banner {
-    background-image: url('https://z-p3-scontent.fadd2-1.fna.fbcdn.net/v/t39.30808-6/488897811_716102580740941_2172310485277620630_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=bBWddTkjDZ0Q7kNvwHWMCOK&_nc_oc=AdkOktR5YnGEOygOEOYN5sSbhvbSD654zculfB2X4ivqf5X-b0LEs3ON3HnvaypeFFg&_nc_zt=23&_nc_ht=z-p3-scontent.fadd2-1.fna&_nc_gid=yhWArjCjsSvXQlQTqPuj3g&oh=00_AfFJ7-QB4U_4UqRbuDcbPP9KRoL6HzALT58iZXF0C_JNsg&oe=67FDC2A5');
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;

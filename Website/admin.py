@@ -6,7 +6,8 @@ from .models import (
     Background_upload,
     Service_data,
     News_catagory,
-    News_post
+    News_post,
+    Footer_img
 )
 
 # Register your models here.
@@ -18,3 +19,4 @@ admin.site.register(Background_upload)
 admin.site.register(Service_data)
 admin.site.register(News_catagory)
 admin.site.register(News_post)
+admin.site.register(Footer_img)
