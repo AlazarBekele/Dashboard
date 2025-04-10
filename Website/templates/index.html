@@ -172,21 +172,48 @@
 
                 <div class="Third_banner_number_banner pt-3">
 
-                    <h1 class="Third_banner_number roboto text-light m-0">4<span>+</span></h1>
+                    <!-- <h1 class="Third_banner_number roboto text-light m-0">4<span>+</span></h1> -->
+
+                    <div style="display: flex; justify-content: center; align-items: center; ">
+
+                        <div class="Third_banner_number num roboto text-light m-0s" data-num="4">0</div>
+
+                        <p style="color: white; font-size: 90px;" class="roboto m-0">+</p>
+
+                    </div>
+
                     <p class="Third_font roboto_thin text-light">Age</p>
     
                 </div>
     
                 <div class="Third_banner_number_banner">
     
-                    <h1 class="Third_banner_number roboto text-light m-0">5<span>+</span></h1>
+                    <!-- <h1 class="">5<span>+</span></h1> -->
+
+                    <div style="display: flex; justify-content: center; align-items: center; ">
+
+                        <div class="Third_banner_number num roboto text-light m-0s" data-num="5">0</div>
+
+                        <p style="color: white; font-size: 90px;" class="roboto m-0">+</p>
+
+                    </div>
+                     
                     <p class="Third_font roboto_thin text-light">Time</p>
     
                 </div>
     
                 <div class="Third_banner_number_banner">
     
-                    <h1 class="Third_banner_number roboto text-light m-0">150<span>+</span></h1>
+                    <!-- <h1 class="Third_banner_number roboto text-light m-0">150<span>+</span></h1> -->
+
+                    <div style="display: flex; justify-content: center; align-items: center; ">
+
+                        <div class="Third_banner_number num roboto text-light m-0s" data-num="150">0</div>
+
+                        <p style="color: white; font-size: 90px;" class="roboto m-0">+</p>
+
+                    </div>
+                    
                     <p class="Third_font roboto_thin text-light">Total Children</p>
     
                 </div>
@@ -315,7 +342,33 @@
             </div>
 
         </div>
+
+
     <!-- <script src="{% static 'Function/app.js' %}"></script> -->
+
+    <script>
+
+        let num = document.querySelectorAll(".num");
+
+        num.forEach((e) => {
+
+            let start = 0;
+            let end = e.dataset.num;
+
+            let count = setInterval (() => {
+
+                start++;
+                e.textContent = start;
+
+                if (start == end) {
+                    clearInterval (count)
+                }
+
+            }, 2000)
+
+        })
+
+    </script>
     
 </body>
 </html>
