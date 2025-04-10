@@ -72,3 +72,11 @@ class News_post (models.Model):
     # Ues in Feeling exprestion
 
 # Reaction_container = models.IntegerField
+
+class Footer_img (models.Model):
+
+    title = models.CharField (max_length=30)
+    Img = models.ImageField (upload_to='footer_img/')
+
+    def __str__(self):
+        return self.title

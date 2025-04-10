@@ -226,7 +226,7 @@
 
             <div>
 
-                <div class="d-flex justify-content-start align-items-center gap-4 pt-3 w-25">
+                <div class="d-flex justify-content-start align-items-center gap-4 pt-1 pb-2 w-25">
 
                     <h1 class="roboto">YouTube</h1>
                     <img class="fourth_icon" src="{% static 'Icon/youtube.png' %}" alt="">
@@ -249,47 +249,51 @@
 
         </div>
 
-        <div class="Footer_banner p-3">
+        {% for Foorters in Footer %}
 
-            <div class="Footer_flex">
+            <div style="background-image: url(' {{ Footers.img.url }} ');" class="Footer_banner p-3">
 
-                <div class="location">
+                <div class="Footer_flex">
 
-                    <iframe class="footer_map shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.6389106535946!2d38.762908524558306!3d9.045162194694578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f6ec2610479%3A0xb1195d7d200268c7!2sEthiopian%20Assemblies%20of%20God%20Church!5e1!3m2!1sen!2set!4v1740223974266!5m2!1sen!2set" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-                </div>
-    
-                <div class="Image_container">
-    
-                    <div class="position_input">
-    
-                        <div class="w-100 input_container d-flex justify-content-between align-items-center">
-    
-                            <input type="text" class="input_bar form-control shadow roboto ps-3" placeholder="First Name">
-    
-                            <input type="text" class="input_bar form-control shadow roboto ps-3" placeholder="First Name">
-    
-                        </div>
-    
-                        <div class="w-100 m-3">
-    
-                            <textarea name="" class="text_area shadow-lg  roboto form-control" placeholder="Type SomeThing On Your Mind" id=""></textarea>
-    
-                        </div>
+                    <div class="location">
 
-                        <div class="w-100 d-flex justify-content-end align-items-center">
-
-                            <button class="btn btn-primary roboto me-5 p-3">Send Email</button>
-
-                        </div>
-    
+                        <iframe class="footer_map shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.6389106535946!2d38.762908524558306!3d9.045162194694578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f6ec2610479%3A0xb1195d7d200268c7!2sEthiopian%20Assemblies%20of%20God%20Church!5e1!3m2!1sen!2set!4v1740223974266!5m2!1sen!2set" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
                     </div>
-    
+        
+                    <div class="Image_container">
+        
+                        <div class="position_input">
+        
+                            <div class="w-100 input_container d-flex justify-content-between align-items-center">
+        
+                                <input type="text" class="input_bar form-control shadow roboto ps-3" placeholder="First Name">
+        
+                                <input type="text" class="input_bar form-control shadow roboto ps-3" placeholder="First Name">
+        
+                            </div>
+        
+                            <div class="w-100 m-3">
+        
+                                <textarea name="" class="text_area shadow-lg  roboto form-control" placeholder="Type SomeThing On Your Mind" id=""></textarea>
+        
+                            </div>
+
+                            <div class="w-100 d-flex justify-content-end align-items-center">
+
+                                <button class="btn btn-primary roboto me-5 p-3">Send Email</button>
+
+                            </div>
+        
+                        </div>
+        
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
+        {% endfor %}
 
     </div>
     

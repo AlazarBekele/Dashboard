@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_data, News_catagory, News_post
+from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_data, News_catagory, News_post, Footer_img
 from .forms import YourModelForm, News_upload
 from django.http import JsonResponse
 
@@ -12,13 +12,15 @@ def index (request):
     Second_Img = Second_image.objects.all()
     Bible_data = Bible_quote.objects.order_by('-id').first()
     previous_bible = Bible_quote.objects.all()
+    Footer = Footer_img.objects.all()
 
 
     context = {
         'image' : Image_data,
         'Sec_img' : Second_Img,
         'BibleGenerate' : Bible_data,
-        'previous_bible' : previous_bible
+        'previous_bible' : previous_bible,
+        'Footer' : Footer
     }
     
     return render (request, 'index.html', context=context)
