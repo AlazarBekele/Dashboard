@@ -44,13 +44,15 @@
 
         {% for pic in image %}
 
-            <div name="Hero_Banner" style="background-image: url('{{ pic.picture.url }}');" class="first_container">
+            <div name="Hero_Banner" class="first_container">
 
                 <div class="Main_nav_large">
 
+                    <div class="Main_First"></div>
+
                     <div class="Main_nav d-flex justify-content-around align-items-center">
 
-                        <img class="" src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
+                        <img class="Main_logo_icon" src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
 
 
                         <div class="d-flex justify-content-center align-items-center gap-5">
@@ -59,42 +61,49 @@
                             <a class="dropColor roboto" href="{% url 'service' %}">Service</a>
                             <a class="dropColor roboto" href="{% url 'donate' %}">Donate</a>
                             <a class="dropColor roboto" href="{% url 'donate' %}">About</a>
-                            <a class="dropColor roboto" href="{% url 'donate' %}">News & Events</a>
+                            <a class="dropColor roboto" href="{% url 'news' %}">News & Events</a>
                             <a class="dropColor roboto" href="{% url 'donate' %}">ministry</a>
                             <a class="dropColor roboto" href="{% url 'donate' %}">contact</a>
                             <a class="dropColor roboto" href="{% url 'donate' %}">Login</a>
         
                         </div>
+
+                    </div>
+
+
+                    <div style="background-image: url('{{ pic.picture.url }}');" class="background_fix">
+
+                        <div style="width: 30%;">
+
+                            <div class="d-flex align-items-center" style="flex-direction: column;">
+
+                                <h1 class="roboto text-light Hero_Banner_Text">Welcome To <br> <span class="EAG">EAG 6K</span> Ethiopia!</h1>
+
+                                <div>
+
+                                    <p class="roboto_thin text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus impedit unde nihil quibusdam saepe recusandae, temporibus voluptatum magni aliquid non, ut sequi omnis cum assumenda a maxime, blanditiis excepturi.</p>
+
+                                </div>
+        
+                            </div>
         
         
-                        <div>
-
-                            <a href="{% url 'news' %}">
-
-                                <button type="button" class="btn btn-primary roboto text-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                    Daily News
-                                </button>
-
-                            </a>
+                            <div class="socia_media_container">
         
+                                <img class="socia_media_icon" src="{% static 'Icon/facebook.png' %}" alt="">
+                                <img class="socia_media_icon" src="{% static 'Icon/youtube.png' %}" alt="">
+                                <img class="socia_media_icon" src="{% static 'Icon/telegram.png' %}" alt="">
+                                <img class="socia_media_icon" src="{% static 'Icon/global.png' %}" alt="">
+        
+                            </div>
+
                         </div>
 
-                    </div>
+                        <div style="width: 30%;">
 
+                            <h1></h1>
 
-                    <div class="Hero_Title_padding d-flex align-items-center">
-
-                        <h1 class="roboto text-light Hero_Banner_Text">Welcome To <br> <span class="EAG">EAG 6K</span> Ethiopia</h1>
-
-                    </div>
-
-
-                    <div class="socia_media_container">
-
-                        <img class="socia_media_icon" src="{% static 'Icon/facebook.png' %}" alt="">
-                        <img class="socia_media_icon" src="{% static 'Icon/youtube.png' %}" alt="">
-                        <img class="socia_media_icon" src="{% static 'Icon/telegram.png' %}" alt="">
-                        <img class="socia_media_icon" src="{% static 'Icon/global.png' %}" alt="">
+                        </div>
 
                     </div>
 
