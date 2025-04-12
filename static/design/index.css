@@ -114,10 +114,6 @@ body {
 
 /*  */
 
-.Main_nav_Container {
-    
-}
-
 .EAG {
     color: #FFC229;
 }
@@ -135,6 +131,10 @@ body {
 
 .Hero_Banner_Text {
     font-size: 60px;
+}
+
+.Last_hero_banner  {
+    font-size: 10px;
 }
 
 .socia_media_container {
