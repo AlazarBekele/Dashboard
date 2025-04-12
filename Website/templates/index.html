@@ -16,7 +16,7 @@
 
     <div class="All_Container">
 
-        <div class="Main_logo_container">
+        {% comment %} <div class="Main_logo_container">
 
             <div class="Logo_container">
 
@@ -40,7 +40,7 @@
     
             </div>
 
-        </div>
+        </div> {% endcomment %}
 
         {% for pic in image %}
 
@@ -58,6 +58,11 @@
                             <a class="dropColor roboto" href="{% url 'programs' %}">Regular Program</a>
                             <a class="dropColor roboto" href="{% url 'service' %}">Service</a>
                             <a class="dropColor roboto" href="{% url 'donate' %}">Donate</a>
+                            <a class="dropColor roboto" href="{% url 'donate' %}">About</a>
+                            <a class="dropColor roboto" href="{% url 'donate' %}">News & Events</a>
+                            <a class="dropColor roboto" href="{% url 'donate' %}">ministry</a>
+                            <a class="dropColor roboto" href="{% url 'donate' %}">contact</a>
+                            <a class="dropColor roboto" href="{% url 'donate' %}">Login</a>
         
                         </div>
         
