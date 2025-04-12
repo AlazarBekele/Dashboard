@@ -33,6 +33,16 @@ def index (request):
 
         print (name, subject, message)
 
+        send_mail (
+
+            name,
+            subject,
+            'alazarthe70@gmail.com',
+            ['alazarthe34@gmail.com'],
+            fail_silently = False,
+
+        )
+
 
     
     return render (request, 'index.html', context=context)
