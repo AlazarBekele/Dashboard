@@ -3,6 +3,8 @@ from .models import Image_Container, Second_image, Background_upload, Bible_quot
 from .forms import YourModelForm, News_upload
 from django.http import JsonResponse
 
+from django.core.mail import send_mail
+
 
 # Create your views here.
 
@@ -30,6 +32,8 @@ def index (request):
         message = request.POST.get('idea')
 
         print (name, subject, message)
+
+
     
     return render (request, 'index.html', context=context)
 
