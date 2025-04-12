@@ -22,6 +22,14 @@ def index (request):
         'previous_bible' : previous_bible,
         'Footer' : Footer
     }
+
+    if request.method == 'POST':
+
+        name = request.POST.get('name')
+        subject = request.POST.get('Subject')
+        message = request.POST.get('idea')
+
+        print (name, subject, message)
     
     return render (request, 'index.html', context=context)
 
