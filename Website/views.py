@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_data, News_catagory, News_post, Footer_img
 from .forms import YourModelForm, News_upload
 from django.http import JsonResponse
+from EAG.settings import EMAIL_HOST_USER
 
 from django.core.mail import send_mail
 
@@ -28,13 +29,21 @@ def index (request):
     if request.method == 'POST':
 
         name = request.POST.get('name')
-        subject = request.POST.get('Subject')
+        Subject = request.POST.get('Subject')
         message = request.POST.get('idea')
+        form_email = 'alazarthe70@gmail.com',
+        recipient_list = ['alazarthe34@gmail.com']  
 
-        print (name, subject, message)
+        print (name, Subject, message)
 
+        send_mail (
+            name,
+            Subject,
+            message,
+            form_email,
+            recipient_list
+        )
 
-    
     return render (request, 'index.html', context=context)
 
 # Define the location of the html file
