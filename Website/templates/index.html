@@ -16,159 +16,204 @@
 
     <div class="All_Container">
 
+        <div class="Main_logo_container">
 
-        <div class="Hero_Banner">
+            <div class="Logo_container">
 
+                <img class="Logo_intro" src="{% static 'IMG/IndexLogo/Logo.png' %}" alt="">
 
-            <div class="min_nav d-flex justify-content-center align-items-center gap-4">
-
-                <p class="roboto m-0 text-light">For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life</p>
-
-                <h5 class="sizeFO roboto m-0">John 3:16</h5>
-
+                <h5 class="text-center text-light roboto_thin Logo_title">ASSEMBLE OF GOD CHURCH</h5>
+                
             </div>
 
-
-        </div>
-
-        <div name="Hero_Banner" class="first_container d-flex justify-content-center">
-
-            <div class="Main_nav_large">
+            <div class="Hero_Banner">
 
 
-                <div class="Main_nav d-flex justify-content-around align-items-center">
-
-                    <img class="" src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
-
-
-                    <div class="d-flex justify-content-center align-items-center gap-5">
+                <div class="min_nav d-flex justify-content-center align-items-center gap-4">
     
-                        <a class="dropColor roboto" href="#">Regular Program</a>
-                        <a class="dropColor roboto" href="#">Service</a>
-                        <a class="dropColor roboto" href="#">Donate</a>
+                    <p class="roboto m-0 text-light">For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life</p>
     
-                    </div>
+                    <h5 class="sizeFO roboto m-0">John 3:16</h5>
     
-    
-                    <div>
-                        
-                        <button class="roboto text-light">Contact</button>
-    
-                    </div>
-
                 </div>
-
-
-                <div class="Hero_Title_padding d-flex align-items-center">
-
-                    <h1 class="roboto text-light Hero_Banner_Text">Welcome To <br> <span class="EAG">EAG 6K</span> Ethiopia</h1>
-
-                </div>
-
-
-                <div class="socia_media_container">
-
-                    <img class="socia_media_icon" src="{% static 'Icon/facebook.png' %}" alt="">
-                    <img class="socia_media_icon" src="{% static 'Icon/youtube.png' %}" alt="">
-                    <img class="socia_media_icon" src="{% static 'Icon/telegram.png' %}" alt="">
-                    <img class="socia_media_icon" src="{% static 'Icon/global.png' %}" alt="">
-
-                </div>
-
-
-            </div>
-
-
-            <div class="Main_nav_Container">
-
+    
+    
             </div>
 
         </div>
 
-        <div class="Second_banner_Container Second_banner">
+        {% for pic in image %}
 
-            <div>
+            <div name="Hero_Banner" style="background-image: url('{{ pic.picture.url }}');" class="first_container">
 
-                <div class="Card_container pt-5 pb-5">
+                <div class="Main_nav_large">
 
-                    <div class="Main_Card d-flex justify-content-center align-items-center">
+                    <div class="Main_nav d-flex justify-content-around align-items-center">
 
-                        <img class="Card_img" src="{% static 'SecondICON/bible.png' %}" alt=" ">
-    
-                    </div>
-    
-                    <div class="Main_Card d-flex justify-content-center align-items-center">
-    
-                        <img class="Card_img" src="{% static 'SecondICON/image3.png' %}" alt=" ">
-    
-                    </div>
-    
-                    <div class="Main_Card d-flex justify-content-center align-items-center">
-    
-                        <img class="Card_img" src="{% static 'SecondICON/image2.png' %}" alt=" ">
-    
-                    </div>
+                        <img class="" src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
 
-                </div>
 
-                <div class="bible_verse pt-3">
-
-                    <h1 class="roboto text-light bible_verse_title">Daily Bible Verse</h1>
-
-                    <div>
-
-                        <h5 class="bible_limiter text-light">"For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
-                        </h5>
-
-                        <h4 class="bible_location roboto pt-3">John 3:16</h4>
-
-                    </div>
-
-                    <div class="icon_container pt-4">
-
-                        <div class="Bible_icon_Container">
-
-                            <img class="Main_bible_icon" src="{% static 'Icon/Daily_Icon/right.png' %}" alt="">
-
+                        <div class="d-flex justify-content-center align-items-center gap-5">
+        
+                            <a class="dropColor roboto" href="{% url 'programs' %}">Regular Program</a>
+                            <a class="dropColor roboto" href="{% url 'service' %}">Service</a>
+                            <a class="dropColor roboto" href="{% url 'donate' %}">Donate</a>
+        
                         </div>
-                        
-                        <div class="Bible_icon_Container">
+        
+        
+                        <div>
 
-                            <img class="Main_bible_icon" src="{% static 'Icon/Daily_Icon/left.png' %}" alt="">
+                            <a href="{% url 'news' %}">
 
+                                <button type="button" class="btn btn-primary roboto text-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Daily News
+                                </button>
+
+                            </a>
+        
                         </div>
 
                     </div>
-    
+
+
+                    <div class="Hero_Title_padding d-flex align-items-center">
+
+                        <h1 class="roboto text-light Hero_Banner_Text">Welcome To <br> <span class="EAG">EAG 6K</span> Ethiopia</h1>
+
+                    </div>
+
+
+                    <div class="socia_media_container">
+
+                        <img class="socia_media_icon" src="{% static 'Icon/facebook.png' %}" alt="">
+                        <img class="socia_media_icon" src="{% static 'Icon/youtube.png' %}" alt="">
+                        <img class="socia_media_icon" src="{% static 'Icon/telegram.png' %}" alt="">
+                        <img class="socia_media_icon" src="{% static 'Icon/global.png' %}" alt="">
+
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
+        {% endfor %}
+
+        {% for Sec in Sec_img %}
+
+            <div class="Second_banner_Container Second_banner" style="background-image: url('{{ Sec.Second_picture.url }}');">
+
+                <div class="Second_container">
+
+                    <div class="Card_container">
+
+                        <div class="Main_Card d-flex justify-content-center align-items-center">
+
+                            <img class="Card_img" src="{% static 'SecondICON/bible.png' %}" alt=" ">
+        
+                        </div>
+        
+                        <div class="Main_Card d-flex justify-content-center align-items-center">
+        
+                            <img class="Card_img" src="{% static 'SecondICON/image3.png' %}" alt=" ">
+        
+                        </div>
+        
+                        <div class="Main_Card d-flex justify-content-center align-items-center">
+        
+                            <img class="Card_img" src="{% static 'SecondICON/image2.png' %}" alt=" ">
+        
+                        </div>
+
+                    </div>
+
+                    <div class="bible_verse pt-3">
+
+                        <h1 class="roboto text-light bible_verse_title">Daily Bible Verse</h1>
+
+                            <div>
+
+                                {% comment %} {% for BibleGenerate_title in BibleGenerate %} {% endcomment %}
+
+                                    <h5 class="bible_limiter shadow-sm">{{ BibleGenerate.MainVerse }}
+                                    </h5>
+
+                                    <h6 class="bible_location roboto pt-3 pe-3">{{ BibleGenerate.BibleName }}</h6>
+
+                                {% comment %} {% endfor %} {% endcomment %}
+
+                            </div>
+
+                        <div class="icon_container">
+
+                            <!-- Button trigger modal -->
+
+                            <button type="button" class="Previous_button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                                <img class="Main_Icon" src="https://img.icons8.com/?size=100&id=12620&format=png&color=000000">
+
+                            </button>
+
+                        </div>
+        
+                    </div>
+
+                </div>
+
+            </div>
+
+        {% endfor %}
 
         <div class="Third_banner shadow-lg p-3">
 
-            <h1 class="Third_banner_title roboto text-light text-center pt-4">Sunday School Children Service & Program</h1>
+            <h1 class="Third_banner_title roboto text-light text-center">Sunday School Children Service & Program</h1>
 
             <div class="Third_banner_number_banner_container">
 
                 <div class="Third_banner_number_banner pt-3">
 
-                    <h1 class="Third_banner_number roboto text-light m-0">4<span>+</span></h1>
+                    <!-- <h1 class="Third_banner_number roboto text-light m-0">4<span>+</span></h1> -->
+
+                    <div style="display: flex; justify-content: center; align-items: center; ">
+
+                        <div class="Third_banner_number num roboto text-light m-0s" data-num="150">0</div>
+
+                        <p style="color: white; font-size: 90px;" class="roboto m-0">+</p>
+
+                    </div>
+
                     <p class="Third_font roboto_thin text-light">Age</p>
     
                 </div>
     
                 <div class="Third_banner_number_banner">
     
-                    <h1 class="Third_banner_number roboto text-light m-0">5<span>+</span></h1>
+                    <!-- <h1 class="">5<span>+</span></h1> -->
+
+                    <div style="display: flex; justify-content: center; align-items: center; ">
+
+                        <div class="Third_banner_number num roboto text-light m-0s" data-num="150">0</div>
+
+                        <p style="color: white; font-size: 90px;" class="roboto m-0">+</p>
+
+                    </div>
+                     
                     <p class="Third_font roboto_thin text-light">Time</p>
     
                 </div>
     
                 <div class="Third_banner_number_banner">
     
-                    <h1 class="Third_banner_number roboto text-light m-0">150<span>+</span></h1>
+                    <!-- <h1 class="Third_banner_number roboto text-light m-0">150<span>+</span></h1> -->
+
+                    <div style="display: flex; justify-content: center; align-items: center; ">
+
+                        <div class="Third_banner_number num roboto text-light m-0s" data-num="150">0</div>
+
+                        <p style="color: white; font-size: 90px;" class="roboto m-0">+</p>
+
+                    </div>
+                    
                     <p class="Third_font roboto_thin text-light">Total Children</p>
     
                 </div>
@@ -181,7 +226,7 @@
 
             <div>
 
-                <div class="d-flex justify-content-start align-items-center gap-4 pt-3 w-25">
+                <div class="d-flex justify-content-start align-items-center gap-4 pt-1 pb-2 w-25">
 
                     <h1 class="roboto">YouTube</h1>
                     <img class="fourth_icon" src="{% static 'Icon/youtube.png' %}" alt="">
@@ -204,49 +249,136 @@
 
         </div>
 
-        <div class="Footer_banner p-3">
+        {% for Foorters in Footer %}
 
-            <div class="Footer_flex">
+            <div style="background-image: url(' {{ Foorters.Img.url }} ');" class="Footer_banner p-3">
 
-                <div class="location">
+                <div class="Footer_flex">
 
-                    <iframe class="footer_map shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.6389106535946!2d38.762908524558306!3d9.045162194694578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f6ec2610479%3A0xb1195d7d200268c7!2sEthiopian%20Assemblies%20of%20God%20Church!5e1!3m2!1sen!2set!4v1740223974266!5m2!1sen!2set" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-                </div>
-    
-                <div class="Image_container">
-    
-                    <div class="position_input">
-    
-                        <div class="w-100 input_container d-flex justify-content-between align-items-center">
-    
-                            <input type="text" class="input_bar form-control shadow roboto ps-3" placeholder="First Name">
-    
-                            <input type="text" class="input_bar form-control shadow roboto ps-3" placeholder="First Name">
-    
-                        </div>
-    
-                        <div class="w-100 m-3">
-    
-                            <textarea name="" class="text_area shadow-lg  roboto form-control" placeholder="Type SomeThing On Your Mind" id=""></textarea>
-    
-                        </div>
+                    <div class="location">
 
-                        <div class="w-100 d-flex justify-content-end align-items-center">
-
-                            <button class="btn btn-primary roboto me-5 p-3">Send Email</button>
-
-                        </div>
-    
+                        <iframe class="footer_map shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.6389106535946!2d38.762908524558306!3d9.045162194694578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f6ec2610479%3A0xb1195d7d200268c7!2sEthiopian%20Assemblies%20of%20God%20Church!5e1!3m2!1sen!2set!4v1740223974266!5m2!1sen!2set" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
                     </div>
+        
+                    <div class="Image_container">
+        
+                        <div class="position_input">
+
+                            <form method="post">
+
+                                {% csrf_token %}
+        
+                                <div class="w-100 input_container d-flex justify-content-between align-items-center">
+            
+                                    <input type="text" name="name" class="input_bar form-control shadow roboto ps-3" placeholder="Full Name">
+            
+                                    <input type="text" name="Subject" class="input_bar form-control shadow roboto ps-3" placeholder="Subject">
+            
+                                </div>
+            
+                                <div class="w-100 m-3">
+            
+                                    <textarea name="idea" class="text_area shadow-lg  roboto form-control" placeholder="Type SomeThing On Your Mind" id=""></textarea>
+            
+                                </div>
+
+                                <div class="w-100 d-flex justify-content-end align-items-center">
+
+                                    <button class="btn btn-primary roboto me-5 p-3">Send Email</button>
+
+                                </div>
+
+                            </form>
+        
+                        </div>
+        
+                    </div>
+
+                </div>
+
+            </div>
+
+        {% endfor %}
+
+    </div>
     
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog modal-dialog modal-dialog-scrollable" style="width: 1000px;">
+
+                <div class="modal-content bg-body">
+
+                    <div class="modal-header">
+
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Previous Bible Post</h1>
+
+                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+                    </div>
+
+                    <div class="modal-body">
+                        
+                        {% for previous_bibles in previous_bible %}
+
+                            <div class="card Card_custom mb-3 shadow-sm">
+
+                                <div class="card-header">
+
+                                    <h4> {{ previous_bibles.BibleName }} </h4>
+
+                                </div>
+
+                                <div class="card-body">
+
+                                    <p class="card-title"> {{ previous_bibles.MainVerse }} </p>
+
+                                </div>
+
+                            </div>
+
+                        {% endfor %}
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-    </div>
+
+    <!-- <script src="{% static 'Function/app.js' %}"></script> -->
+
+    <script>
+
+        let num = document.querySelectorAll(".num");
+
+        num.forEach((e) => {
+
+            let start = 0;
+            let end = e.dataset.num;
+
+            let count = setInterval (() => {
+
+                start++;
+                e.textContent = start;
+
+                if (start == end) {
+                    clearInterval (count)
+                }
+
+            }, 1)
+
+        })
+
+    </script>
     
 </body>
 </html>

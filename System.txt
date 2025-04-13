@@ -1,0 +1,109 @@
+First Page -->
+	
+	Hero Banner
+
+		Regular Program -->
+	
+			3 Program with in video card -- Finsh
+	
+		Service -->
+
+			List All Service -- Finsh Today
+
+				- Service List
+
+					* Lord's Supper --
+					* Edir
+
+						- When you need pay the edir click the image
+						
+					* Worship --
+					* Media Team -- Logo
+
+					-- When click the out side blur image
+
+		Donate -->
+
+			Know
+
+		Contact -- >
+
+			Modal
+
+		Daily_news -->
+
+			Post page
+
+				Post Item
+
+					Photo
+					video
+					file / PDF, Word, Execl etc...
+					Audio
+
+				when Finsh upload got loading effect
+
+				Title
+
+				Description
+
+				Reaction
+
+					When click the Btn count & display in the User display by number
+
+						like 👍23k
+
+					comment
+
+						When write the text in text area & click the comment Btn save in the Store_comment Data base
+
+				you got the upload page link in the other uploads bottom
+
+
+	Social Icon -- > Link All Account
+
+Second Banner -->
+
+		Icons_cards -->
+		
+			link cards
+
+		Daily Bible -->
+
+			javaScript change
+
+				- Store the Bible verse up to 30
+				- Have an id every verse
+				- Generate random number 1 - 30
+				- Change before 24 hour
+                
+
+Third Banner -- >
+
+		Increament the number show in html
+
+Fourth Banner -- >
+
+		Scrap the recent video using date to this page
+
+Footer Huge Final -- >
+
+		Send email from Web to email 
+
+
+https://alazar-bekele.imgbb.com/ Free image depoloyer
+
+Fix the Webpage Size
+
+Make Tutorial for Website
+
+	- When the user is new the Tutor is avalible
+
+		* is not login
+		* is login not
+
+
+Add Main Background image when the Hero banner's is caming.
+
+
+	Make 404 Template
