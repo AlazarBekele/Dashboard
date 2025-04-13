@@ -119,10 +119,12 @@ body {
 
 .Last_hero_banner {
     width: 60px;
+    color: white;
 }
 
 .img_container {
     height: 40px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(683%) hue-rotate(4deg) brightness(115%) contrast(100%);
 }
 
 .Main_feature_container {
@@ -130,7 +132,7 @@ body {
     justify-content: start;
     align-items: center;
     padding-left: 250px;
-    gap: 5px;
+    gap: 3px;
 }
 
 .Main_nav img {
