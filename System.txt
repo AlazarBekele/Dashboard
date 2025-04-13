@@ -104,3 +104,6 @@ Make Tutorial for Website
 
 
 Add Main Background image when the Hero banner's is caming.
+
+
+	Make 404 Template

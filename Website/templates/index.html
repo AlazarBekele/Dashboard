@@ -13,10 +13,11 @@
         <img class="SizeLogo" src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
 
     </div> -->
+    
 
     <div class="All_Container">
 
-        <div class="Main_logo_container">
+        {% comment %} <div class="Main_logo_container">
 
             <div class="Logo_container">
 
@@ -40,7 +41,7 @@
     
             </div>
 
-        </div>
+        </div> {% endcomment %}
 
         {% for pic in image %}
 
@@ -48,9 +49,11 @@
 
                 <div class="Main_nav_large">
 
+                    <div class="Main_First"></div>
+
                     <div class="Main_nav d-flex justify-content-around align-items-center">
 
-                        <img class="" src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
+                        <img class="Main_logo_icon" src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
 
 
                         <div class="d-flex justify-content-center align-items-center gap-5">
@@ -58,38 +61,78 @@
                             <a class="dropColor roboto" href="{% url 'programs' %}">Regular Program</a>
                             <a class="dropColor roboto" href="{% url 'service' %}">Service</a>
                             <a class="dropColor roboto" href="{% url 'donate' %}">Donate</a>
-        
-                        </div>
-        
-        
-                        <div>
-
-                            <a href="{% url 'news' %}">
-
-                                <button type="button" class="btn btn-primary roboto text-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                    Daily News
-                                </button>
-
-                            </a>
+                            <a class="dropColor roboto" href="{% url 'donate' %}">About</a>
+                            <a class="dropColor roboto" href="{% url 'news' %}">News & Events</a>
+                            <a class="dropColor roboto" href="{% url 'donate' %}">ministry</a>
+                            <a class="dropColor roboto" href="{% url 'donate' %}">contact</a>
+                            <a class="dropColor roboto" href="{% url 'donate' %}">Login</a>
         
                         </div>
 
                     </div>
 
 
-                    <div class="Hero_Title_padding d-flex align-items-center">
+                    <div class="background_fix">
 
-                        <h1 class="roboto text-light Hero_Banner_Text">Welcome To <br> <span class="EAG">EAG 6K</span> Ethiopia</h1>
+                        <div style="width: 30%;">
+
+                            <div class="d-flex align-items-center" style="flex-direction: column;">
+
+                                <h1 class="roboto text-light Hero_Banner_Text">Welcome To <br> <span class="EAG">EAG 6K</span> Ethiopia Church!</h1>
+
+                                <div>
+
+                                    <p class="roboto_thin text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus impedit unde nihil quibusdam saepe recusandae, temporibus voluptatum magni aliquid non, ut sequi omnis cum assumenda a maxime, blanditiis excepturi.</p>
+
+                                </div>
+        
+                            </div>
+        
+        
+                            <div class="socia_media_container">
+        
+                                <img class="socia_media_icon" src="{% static 'Icon/facebook.png' %}" alt="">
+                                <img class="socia_media_icon" src="{% static 'Icon/youtube.png' %}" alt="">
+                                <img class="socia_media_icon" src="{% static 'Icon/telegram.png' %}" alt="">
+                                <img class="socia_media_icon" src="{% static 'Icon/global.png' %}" alt="">
+        
+                            </div>
+
+                        </div>
+
+                        <div style="width: 30%;">
+
+                            <h1></h1>
+
+                        </div>
 
                     </div>
 
+                </div>
 
-                    <div class="socia_media_container">
+                <div class="Main_feature_container">
 
-                        <img class="socia_media_icon" src="{% static 'Icon/facebook.png' %}" alt="">
-                        <img class="socia_media_icon" src="{% static 'Icon/youtube.png' %}" alt="">
-                        <img class="socia_media_icon" src="{% static 'Icon/telegram.png' %}" alt="">
-                        <img class="socia_media_icon" src="{% static 'Icon/global.png' %}" alt="">
+                    <div class="feature_container">
+
+                        <img class="feature_icon" src="https://img.icons8.com/?size=100&id=7847&format=png&color=000000" alt="">
+
+                        <h6 class="Last_hero_banner roboto_main m-0">contact pastors</h6>
+
+                    </div>
+
+                    <div class="feature_container">
+
+                        <img class="feature_icon" src="https://img.icons8.com/?size=100&id=7847&format=png&color=000000" alt="">
+
+                        <h6 class="Last_hero_banner roboto_main m-0">contact pastors</h6>
+
+                    </div>
+
+                    <div class="feature_container">
+
+                        <img class="feature_icon" src="https://img.icons8.com/?size=100&id=7847&format=png&color=000000" alt="">
+
+                        <h6 class="Last_hero_banner roboto_main m-0">contact pastors</h6>
 
                     </div>
 
@@ -264,26 +307,32 @@
                     <div class="Image_container">
         
                         <div class="position_input">
-        
-                            <div class="w-100 input_container d-flex justify-content-between align-items-center">
-        
-                                <input type="text" class="input_bar form-control shadow roboto ps-3" placeholder="First Name">
-        
-                                <input type="text" class="input_bar form-control shadow roboto ps-3" placeholder="First Name">
-        
-                            </div>
-        
-                            <div class="w-100 m-3">
-        
-                                <textarea name="" class="text_area shadow-lg  roboto form-control" placeholder="Type SomeThing On Your Mind" id=""></textarea>
-        
-                            </div>
 
-                            <div class="w-100 d-flex justify-content-end align-items-center">
+                            <form method="post">
 
-                                <button class="btn btn-primary roboto me-5 p-3">Send Email</button>
+                                {% csrf_token %}
+        
+                                <div class="w-100 input_container d-flex justify-content-between align-items-center">
+            
+                                    <input type="text" name="name" class="input_bar form-control shadow roboto ps-3" placeholder="Full Name">
+            
+                                    <input type="text" name="Subject" class="input_bar form-control shadow roboto ps-3" placeholder="Subject">
+            
+                                </div>
+            
+                                <div class="w-100 m-3">
+            
+                                    <textarea name="idea" class="text_area shadow-lg  roboto form-control" placeholder="Type SomeThing On Your Mind" id=""></textarea>
+            
+                                </div>
 
-                            </div>
+                                <div class="w-100 d-flex justify-content-end align-items-center">
+
+                                    <button class="btn btn-primary roboto me-5 p-3">Send Email</button>
+
+                                </div>
+
+                            </form>
         
                         </div>
         
