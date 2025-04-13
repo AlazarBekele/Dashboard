@@ -45,94 +45,101 @@
 
         {% for pic in image %}
 
-            <div name="Hero_Banner" style="background-image: url('{{ pic.picture.url }}');" class="first_container">
+            <div name="Hero_Banner" class="first_container">
 
-                <div class="Main_nav_large">
+                <div class="Main_container">
 
-                    <div class="Main_First"></div>
+                    <div class="Main_nav_large">
 
-                    <div class="Main_nav d-flex justify-content-around align-items-center">
-
-                        <img class="Main_logo_icon" src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
-
-
-                        <div class="d-flex justify-content-center align-items-center gap-5">
-        
-                            <a class="dropColor roboto" href="{% url 'programs' %}">Regular Program</a>
-                            <a class="dropColor roboto" href="{% url 'service' %}">Service</a>
-                            <a class="dropColor roboto" href="{% url 'donate' %}">Donate</a>
-                            <a class="dropColor roboto" href="{% url 'donate' %}">About</a>
-                            <a class="dropColor roboto" href="{% url 'news' %}">News & Events</a>
-                            <a class="dropColor roboto" href="{% url 'donate' %}">ministry</a>
-                            <a class="dropColor roboto" href="{% url 'donate' %}">contact</a>
-                            <a class="dropColor roboto" href="{% url 'donate' %}">Login</a>
-        
+                        <div class="Main_First"></div>
+    
+                        <div class="Main_nav d-flex justify-content-around align-items-center">
+    
+                            <img class="Main_logo_icon" src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
+    
+    
+                            <div class="d-flex justify-content-center align-items-center gap-5">
+            
+                                <a class="dropColor roboto" href="{% url 'programs' %}">Regular Program</a>
+                                <a class="dropColor roboto" href="{% url 'service' %}">Service</a>
+                                <a class="dropColor roboto" href="{% url 'donate' %}">Donate</a>
+                                <a class="dropColor roboto" href="{% url 'donate' %}">About</a>
+                                <a class="dropColor roboto" href="{% url 'news' %}">News & Events</a>
+                                <a class="dropColor roboto" href="{% url 'donate' %}">ministry</a>
+                                <a class="dropColor roboto" href="{% url 'donate' %}">contact</a>
+                                <a class="dropColor roboto" href="{% url 'donate' %}">Login</a>
+            
+                            </div>
+    
                         </div>
-
+    
                     </div>
 
+                    <div class="Set_background" style="background-image: url('{{ pic.picture.url }}');">
 
-                    <div class="background_fix">
-
-                        <div style="width: 30%;">
-
-                            <div class="d-flex align-items-center" style="flex-direction: column;">
-
-                                <h1 class="roboto text-light Hero_Banner_Text">Welcome To <br> <span class="EAG">EAG 6K</span> Ethiopia Church!</h1>
-
-                                <div>
-
-                                    <p class="roboto_thin text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus impedit unde nihil quibusdam saepe recusandae, temporibus voluptatum magni aliquid non, ut sequi omnis cum assumenda a maxime, blanditiis excepturi.</p>
-
+                        <div>
+    
+                            <div style="width: 30%;">
+    
+                                <div class="d-flex align-items-center" style="flex-direction: column;">
+    
+                                    <h1 class="roboto text-light Hero_Banner_Text">Welcome To <br> <span class="EAG">EAG 6K</span> Ethiopia Church!</h1>
+    
+                                    <div>
+    
+                                        <p class="roboto_thin text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus impedit unde nihil quibusdam saepe recusandae, temporibus voluptatum magni aliquid non, ut sequi omnis cum assumenda a maxime, blanditiis excepturi.</p>
+    
+                                    </div>
+            
                                 </div>
+            
+            
+                                <div class="socia_media_container">
+            
+                                    <img class="socia_media_icon" src="{% static 'Icon/facebook.png' %}" alt="">
+                                    <img class="socia_media_icon" src="{% static 'Icon/youtube.png' %}" alt="">
+                                    <img class="socia_media_icon" src="{% static 'Icon/telegram.png' %}" alt="">
+                                    <img class="socia_media_icon" src="{% static 'Icon/global.png' %}" alt="">
+            
+                                </div>
+    
+                            </div>
+    
+                            <div style="width: 30%;">
+    
+                                <h1></h1>
+    
+                            </div>
+    
+                        </div>
+        
+                        <div class="Main_feature_container">
+        
+                            <div class="feature_container">
+        
+                                <img class="feature_icon" src="https://img.icons8.com/?size=100&id=7847&format=png&color=000000" alt="">
+        
+                                <h6 class="Last_hero_banner roboto_main m-0">contact pastors</h6>
         
                             </div>
         
+                            <div class="feature_container">
         
-                            <div class="socia_media_container">
+                                <img class="feature_icon" src="https://img.icons8.com/?size=100&id=7847&format=png&color=000000" alt="">
         
-                                <img class="socia_media_icon" src="{% static 'Icon/facebook.png' %}" alt="">
-                                <img class="socia_media_icon" src="{% static 'Icon/youtube.png' %}" alt="">
-                                <img class="socia_media_icon" src="{% static 'Icon/telegram.png' %}" alt="">
-                                <img class="socia_media_icon" src="{% static 'Icon/global.png' %}" alt="">
+                                <h6 class="Last_hero_banner roboto_main m-0">contact pastors</h6>
         
                             </div>
-
+        
+                            <div class="feature_container">
+        
+                                <img class="feature_icon" src="https://img.icons8.com/?size=100&id=7847&format=png&color=000000" alt="">
+        
+                                <h6 class="Last_hero_banner roboto_main m-0">contact pastors</h6>
+        
+                            </div>
+        
                         </div>
-
-                        <div style="width: 30%;">
-
-                            <h1></h1>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="Main_feature_container">
-
-                    <div class="feature_container">
-
-                        <img class="feature_icon" src="https://img.icons8.com/?size=100&id=7847&format=png&color=000000" alt="">
-
-                        <h6 class="Last_hero_banner roboto_main m-0">contact pastors</h6>
-
-                    </div>
-
-                    <div class="feature_container">
-
-                        <img class="feature_icon" src="https://img.icons8.com/?size=100&id=7847&format=png&color=000000" alt="">
-
-                        <h6 class="Last_hero_banner roboto_main m-0">contact pastors</h6>
-
-                    </div>
-
-                    <div class="feature_container">
-
-                        <img class="feature_icon" src="https://img.icons8.com/?size=100&id=7847&format=png&color=000000" alt="">
-
-                        <h6 class="Last_hero_banner roboto_main m-0">contact pastors</h6>
 
                     </div>
 
