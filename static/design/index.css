@@ -57,6 +57,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero_Title {
@@ -115,6 +118,12 @@ body {
     align-items: center;
     backdrop-filter: blur(20px);
     gap: 15px;
+    filter: brightness(80%);
+    transition: 0.5s ease;
+}
+
+.feature_container:hover {
+    filter: brightness(100%);
 }
 
 .Last_hero_banner {
