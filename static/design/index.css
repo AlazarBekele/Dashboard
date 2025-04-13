@@ -104,16 +104,25 @@ body {
 
 .feature_icon {
     width: 20px;
-    height: auto;
+    height: 20px;
 }
 
 .feature_container {
-    width: 240px;
-    height: 100px;
+    width: 250px;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    backdrop-filter: blur(20px);
+    gap: 15px;
+}
+
+.Last_hero_banner {
+    width: 60px;
+}
+
+.img_container {
+    height: 40px;
 }
 
 .Main_feature_container {
