@@ -196,21 +196,13 @@ body {
 
 /*  */
 
-.Second_banner_Container {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .Second_container {
     width: 100%;
     height: 100vh;
 }
 
 .Second_banner {
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     background-position: center;
     background-size: cover;
