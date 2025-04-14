@@ -75,7 +75,7 @@
     
                     </div>
 
-                     <div class="Set_background" id="bg_change"> {% comment %} style="background-image: url('{{ pic.picture.url }}');" {% endcomment %}
+                     <div class="Set_background" style="background-image: url('{{ pic.picture.url }}');">
 
                         <div class="hero_Title">
     
@@ -87,14 +87,14 @@
     
                                     <div>
     
-                                        <p class="roboto_thin text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus impedit unde nihil quibusdam saepe recusandae, temporibus voluptatum magni aliquid non, ut sequi omnis cum assumenda a maxime, blanditiis excepturi.</p>
+                                        <p class="roboto_thin text-light hero_dicription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus impedit unde nihil quibusdam saepe recusandae, temporibus voluptatum magni aliquid non, ut sequi omnis cum assumenda a maxime, blanditiis excepturi.</p>
     
                                     </div>
             
                                 </div>
             
             
-                                <div class="socia_media_container">
+                                <div class="socia_media_container" id="socia_media_id">
             
                                     <img class="socia_media_icon" src="{% static 'Icon/facebook.png' %}" alt="">
                                     <img class="socia_media_icon" src="{% static 'Icon/youtube.png' %}" alt="">
@@ -439,27 +439,27 @@
 
         })
 
-        const change_img = [
+        // const change_img = [
         
-            {% for img in image %}
+        //     {% for img in image %}
 
-                " {{ img.image.url }} " {% if not forloop.list %}, {% endif %}
+        //         " {{ img.image.url }} " {% if not forloop.list %}, {% endif %}
 
-            {% endfor %}
+        //     {% endfor %}
 
-        ];
+        // ];
 
-        let current = 0;
-        const bgDiv = document.getElementById ('bg_change');
+        // let current = 0;
+        // const bgDiv = document.getElementById ('bg_change');
 
-        function changeBackground () {
-            bgDiv.style.backgroundImage = `url(${change_img[current]})`;
-            current = (current + 1) % change_img.length;
-        }
+        // function changeBackground () {
+        //     bgDiv.style.backgroundImage = `url(${change_img[current]})`;
+        //     current = (current + 1) % change_img.length;
+        // }
 
-        changeBackground ();
+        // changeBackground ();
 
-        setInterval (changeBackground, 2000)
+        // setInterval (changeBackground, 2000)
 
     </script>
     

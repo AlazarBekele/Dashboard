@@ -60,20 +60,32 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    animation-name: Scale_image;
-    animation-iteration-count: initial;
-    animation-duration: 3s;
 }
 
 @keyframes Scale_image {
 
     from {
-        transform: scale(1);
+        transform: translateY(100px);
+        opacity: 0;
     }
 
     to {
-        transform: scale(0.99);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes discripion_image {
+
+    from {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
     }
 
 }
@@ -200,6 +212,21 @@ body {
 
 .Hero_Banner_Text {
     font-size: 70px;
+    animation-name: Scale_image;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
+}
+
+.hero_dicription {
+    animation-name: discripion_image;
+    animation-iteration-count: initial;
+    animation-duration: 2s;
+}
+
+.fade_thrid {
+    animation-name: Scale_image;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
 }
 
 .socia_media_container {
