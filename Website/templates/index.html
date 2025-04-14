@@ -75,7 +75,7 @@
     
                     </div>
 
-                    <div class="Set_background" style="background-image: url('{{ pic.picture.url }}');">
+                     <div class="Set_background" id="bg_change"> {% comment %} style="background-image: url('{{ pic.picture.url }}');" {% endcomment %}
 
                         <div class="hero_Title">
     
@@ -438,6 +438,28 @@
             }, 1)
 
         })
+
+        const change_img = [
+        
+            {% for img in image %}
+
+                " {{ img.image.url }} " {% if not forloop.list %}, {% endif %}
+
+            {% endfor %}
+
+        ];
+
+        let current = 0;
+        const bgDiv = document.getElementById ('bg_change');
+
+        function changeBackground () {
+            bgDiv.style.backgroundImage = `url(${change_img[current]})`;
+            current = (current + 1) % change_img.length;
+        }
+
+        changeBackground ();
+
+        setInterval (changeBackground, 2000)
 
     </script>
     
