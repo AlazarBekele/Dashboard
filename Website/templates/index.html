@@ -326,27 +326,27 @@
         
                         <div class="position_input">
 
-                            <form method="post">
+                            <form method="post" class="w-100">
 
                                 {% csrf_token %}
         
-                                <div class="w-100 input_container d-flex justify-content-between align-items-center">
+                                <div class="input_container">
             
-                                    <input type="text" name="name" class="input_bar form-control shadow roboto ps-3" placeholder="Full Name">
+                                    <input type="text" name="name" class="input_bar form-control shadow roboto" placeholder="Full Name">
             
-                                    <input type="text" name="Subject" class="input_bar form-control shadow roboto ps-3" placeholder="Subject">
+                                    <input type="text" name="Subject" class="input_bar form-control shadow roboto" placeholder="Subject">
             
                                 </div>
             
-                                <div class="w-100 m-3">
+                                <div class="w-100 mt-3">
             
-                                    <textarea name="idea" class="text_area shadow-lg  roboto form-control" placeholder="Type SomeThing On Your Mind" id=""></textarea>
+                                    <textarea name="idea" class="text_area shadow-lg roboto form-control" placeholder="Type SomeThing On Your Mind" id=""></textarea>
             
                                 </div>
 
-                                <div class="w-100 d-flex justify-content-end align-items-center">
+                                <div class="w-100 mt-1 d-flex justify-content-end align-items-center">
 
-                                    <button class="btn btn-primary roboto me-5 p-3">Send Email</button>
+                                    <button class="btn btn-primary roboto me-5 p-2">Send Email</button>
 
                                 </div>
 
