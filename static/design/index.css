@@ -218,7 +218,7 @@ body {
 .img_size {
     width: 800px;
     height: auto;
-    border-radius: 25px;
+    border-radius: 35px;
 }
 
 .Second_img_container {
@@ -232,7 +232,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #007bff;
+    background-color: rgb(0, 123, 255, 0.9);
+    padding: 70px;
+    margin-left: -80px;
 }
 
 .bible_limiter {
@@ -257,7 +259,13 @@ body {
     height: 100px;
     display: flex;
     justify-content: center;
-    align-items: self-start;
+    align-items: center;
+}
+
+.Previous_button {
+    background-color: transparent;
+    border: none;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(683%) hue-rotate(4deg) brightness(115%) contrast(100%);
 }
 
 .Previous_button:hover {
@@ -389,12 +397,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.Previous_button {
-    background-color: transparent;
-    border: none;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(683%) hue-rotate(4deg) brightness(115%) contrast(100%);
 }
 
 .Card_container {
