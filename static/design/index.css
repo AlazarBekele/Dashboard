@@ -229,8 +229,8 @@ body {
 
 .bible_verse {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     flex-direction: column;
     background-color: rgb(0, 123, 255, 0.9);
     padding: 70px;
@@ -239,7 +239,6 @@ body {
 
 .bible_limiter {
     width: 600px;
-    text-align: center;
     color: white;
 }
 
@@ -256,10 +255,8 @@ body {
 
 .icon_container {
     width: 300px;
-    height: 100px;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .Previous_button {
