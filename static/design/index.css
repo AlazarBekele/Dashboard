@@ -198,42 +198,46 @@ body {
 
 .Second_container {
     width: 100%;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Second_banner {
     height: 70vh;
     width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: brightness(100%);
-    overflow: hidden;
-}
-
-.Card_img {
-    width: 100px;
-}
-
-.bible_verse {
-    position: absolute;
-    z-index: 4;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
-.bible_verse_title {
-    font-size: 80px;
+.img_size {
+    width: 800px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.Second_img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bible_verse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #007bff;
 }
 
 .bible_limiter {
     width: 600px;
     text-align: center;
-    background-color: white;
-    padding: 20px;
 }
 
 .bible_location {

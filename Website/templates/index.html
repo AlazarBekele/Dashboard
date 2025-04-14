@@ -175,13 +175,23 @@
 
         {% for Sec in Sec_img %}
 
-            <div class="Second_banner_Container Second_banner" style="background-image: url('{{ Sec.Second_picture.url }}');">
+            <div class="Second_banner" style="background-image: url('{{ Sec.Second_picture.url }}');">
 
                 <div class="Second_container">
 
-                    <div class="bible_verse pt-3">
+                    <div class="Second_img_container">
 
-                        <h1 class="roboto text-light bible_verse_title">Daily Bible Verse</h1>
+                        <div>
+
+                            <img class="img_size" src="{% static 'IMG/SecondImage/Second.jpg' %}" alt="">
+
+                        </div>
+
+                    </div>
+
+                    <div class="bible_verse">
+
+                        <h2 class="roboto text-light">Daily Bible Verse</h2>
 
                             <div>
 
