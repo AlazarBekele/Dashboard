@@ -26,6 +26,10 @@
     height: 100vh;
     backdrop-filter: blur(20px);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .first_title {
@@ -33,7 +37,6 @@
     height: 70px;
     display: flex;
     align-items: center;
-    padding-top: 20px;
 }
 
 .hor_line {
@@ -54,7 +57,7 @@
 
 .Service_btn_containers {
     width: 100%;
-    height: 40vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
