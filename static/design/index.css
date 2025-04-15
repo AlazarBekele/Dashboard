@@ -16,21 +16,17 @@ body {
 
 .Logo_intro {
     animation-name: Logo_animation;
-    animation-iteration-count: infinite
-    ;
+    animation-iteration-count: infinite;
     animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes Logo_animation {
     from {
-        width: 100px;
-        transform: rotate(110deg);
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     to {
-        width: 250px;
-        transform: rotate(0deg);
         opacity: 1;
     }
 }
