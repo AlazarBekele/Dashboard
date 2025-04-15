@@ -17,7 +17,7 @@
 
     <div class="All_Container">
 
-        {% comment %} <div class="Main_logo_container">
+        <div class="Main_logo_container">
 
             <div class="Logo_container">
 
@@ -41,7 +41,7 @@
     
             </div>
 
-        </div> {% endcomment %}
+        </div>
 
         {% for pic in image %}
 
@@ -55,7 +55,7 @@
     
                         <div class="Main_nav d-flex justify-content-around align-items-center">
     
-                            <img class="Main_logo_icon" src="{% static 'IMG/Logo/logo.jpg' %}" alt="">
+                            <a href="{% url 'index' %}"><img class="Main_logo_icon" src="{% static 'IMG/Logo/logo.jpg' %}" alt=""></a>
     
     
                             <div class="d-flex justify-content-center align-items-center gap-5">
