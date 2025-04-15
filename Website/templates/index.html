@@ -17,7 +17,7 @@
 
     <div class="All_Container">
 
-        <div class="Main_logo_container">
+        <div class="Main_logo_container" id="logo_container_id">
 
             <div class="Logo_container">
 
@@ -83,18 +83,18 @@
     
                                 <div class="d-flex align-items-center" style="flex-direction: column;">
     
-                                    <h1 class="roboto text-light Hero_Banner_Text">Welcome To <br> <span class="EAG">EAG 6K</span> Ethiopia Church!</h1>
+                                    <h1 class="roboto text-light" id="Hero_Banner_Text_id">Welcome To <br> <span class="EAG">EAG 6K</span> Ethiopia Church!</h1>
     
                                     <div>
     
-                                        <p class="roboto_thin text-light hero_dicription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus impedit unde nihil quibusdam saepe recusandae, temporibus voluptatum magni aliquid non, ut sequi omnis cum assumenda a maxime, blanditiis excepturi.</p>
+                                        <p class="roboto_thin text-light" id="hero_dicription_id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus impedit unde nihil quibusdam saepe recusandae, temporibus voluptatum magni aliquid non, ut sequi omnis cum assumenda a maxime, blanditiis excepturi.</p>
     
                                     </div>
             
                                 </div>
             
             
-                                <div class="socia_media_container">
+                                <div class="" id="socia_media_container_id">
             
                                     <img class="socia_media_icon" src="{% static 'Icon/facebook.png' %}" alt="">
                                     <img class="socia_media_icon" src="{% static 'Icon/youtube.png' %}" alt="">
@@ -453,7 +453,28 @@
 
             }, 1)
 
-        })
+        });
+
+        let logo_container_id = document.getElementById ('logo_container_id')
+
+        function load_on () {
+            logo_container_id.classList.remove ('Main_logo_container')
+            logo_container_id.classList.add ('stop_load')
+        }
+
+        setInterval (load_on, 3000);
+
+        let Hero_Banner_Text_id = document.getElementById ('Hero_Banner_Text_id');
+        let hero_dicription = document.getElementById ('hero_dicription_id');
+        let socia_media_container = document.getElementById ('socia_media_container_id');
+
+        function Start_animation () {
+            Hero_Banner_Text_id.classList.add ('Hero_Banner_Text');
+            hero_dicription.classList.add ('hero_dicription');
+            socia_media_container.classList.add ('socia_media_container');
+        }
+
+        setInterval (Start_animation, 3010);
 
         // const change_img = [
         
