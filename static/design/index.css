@@ -408,6 +408,11 @@ body {
     align-items: center;
 }
 
+.Img_width {
+    width: 150px;
+    height: auto;
+}
+
 /*  */
 
 .location {
