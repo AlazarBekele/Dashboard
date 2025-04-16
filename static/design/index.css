@@ -470,12 +470,12 @@ body {
     flex-direction: column;
 }
 
-.Image_container {
+.News_container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    flex-direction: column;
+    overflow: hidden;
 }
 
 .text_area {
