@@ -16,6 +16,7 @@ def index (request):
     Bible_data = Bible_quote.objects.order_by('-id').first()
     previous_bible = Bible_quote.objects.all()
     Footer = Footer_img.objects.all()
+    News_dis = News_post.objects.all()
 
 
     context = {
@@ -23,7 +24,8 @@ def index (request):
         'Sec_img' : Second_Img,
         'BibleGenerate' : Bible_data,
         'previous_bible' : previous_bible,
-        'Footer' : Footer
+        'Footer' : Footer,
+        'News_front' : News_dis
     }
 
     if request.method == 'POST':

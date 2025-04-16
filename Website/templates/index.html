@@ -306,7 +306,24 @@
 
                         <div class="Feature_News">
 
+                            {% for News_fronts in News_front %}
 
+                                <div class="Image_container">
+
+                                    <img class="Img_width" src="{{ News_display.Post_img.url }}" alt="no">
+        
+                                    <div class="w-100 mt-3 ps-3">
+        
+                                        <h4 class="roboto">{{ News_display.title }}</h4>
+                                        <p class="roboto_thin">{{ News_display.Descrption }}</p>
+                                        <p class="roboto_thin">{{ News_display.category }}</p>
+                                        <p class="roboto_thin">{{ News_display.post_date | timesince }}</p>
+        
+                                    </div>
+        
+                                </div>
+
+                            {% endfor %}
 
                         </div>
 
