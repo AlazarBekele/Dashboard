@@ -14,13 +14,38 @@ body {
     cursor: url('https://img.icons8.com/material-rounded/24/228BE6/blue-pointer.png') 3 3 , auto;
 }
 
+.Logo_intro {
+    animation-name: Logo_animation;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes Logo_animation {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .Main_logo_container {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3674B5;
+    flex-direction: column;
+    background-color: #003d7d;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.stop_load {
+    display: none;
 }
 
 .Logo_title {
@@ -43,12 +68,78 @@ body {
     z-index: 1;
 }
 
-.first_container {
-    z-index: 9;
+.Main_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.Set_background {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+}
+
+@keyframes Scale_image {
+
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes discripion_image {
+
+    from {
+        transform: translateY(120px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes social_image {
+
+    from {
+        transform: translateY(120px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+.hero_Title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.first_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .SizeLogo {
@@ -65,27 +156,63 @@ body {
 }
 
 .min_nav {
-    height: 50px;
+    height: 20px;
     width: 100%;
-    background-color: #3674B5;
 }
 
 .sizeFO {
     color: #FFC229;
 }
 
-.Main_nav {
-    height: 100px;
-    width: 1300px;
+ .Main_nav {
+    height: 70px;
+    width: 100%;
     background-color: rgb(255, 255, 255);
-    border-radius: 16px;
     box-shadow: 0px 6px 50px #A6A6A6;
-    margin-top: 30px;
+}
+
+.feature_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.feature_container {
+    width: 250px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    gap: 15px;
+    filter: brightness(80%);
+    transition: 0.5s ease;
+}
+
+.feature_container:hover {
+    filter: brightness(100%);
+}
+
+.Last_hero_banner {
+    width: 60px;
+    color: white;
+}
+
+.img_container {
+    height: 40px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(683%) hue-rotate(4deg) brightness(115%) contrast(100%);
+}
+
+.Main_feature_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 250px;
+    gap: 3px;
 }
 
 .Main_nav img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 .dropColor {
@@ -101,40 +228,49 @@ body {
 }
 
 .socia_media_icon {
-    width: 50px;
+    width: 30px;
 }
 
 /*  */
-
-.Main_nav_Container {
-    height: 90vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: brightness(25%);
-    position: relative;
-}
 
 .EAG {
     color: #FFC229;
 }
 
+.Main_First {
+    height: 30px;
+    background-color: #007bff;
+}
+
 .Main_nav_large {
-    position: absolute;
-    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .Hero_Banner_Text {
-    font-size: 100px;
-    animation: create linear;
-    animation-duration: 0.3s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
+    font-size: 70px;
+    animation-name: Scale_image;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
 }
 
-.Hero_Title_padding {
-    height: 400px;
+.hero_dicription {
+    animation-name: discripion_image;
+    animation-iteration-count: initial;
+    animation-duration: 2s;
+}
+
+.socia_media_container {
+    animation-name: social_image;
+    animation-iteration-count: initial;
+    animation-duration: 2s;
+}
+
+.fade_thrid {
+    animation-name: Scale_image;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
 }
 
 .socia_media_container {
@@ -142,94 +278,55 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 350px;
+    width: 250px;
 }
 
 /*  */
 
-.Second_banner_Container {
+.Second_container {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.Second_container {
-    width: 100%;
-    height: 100vh;
 }
 
 .Second_banner {
-    background-image: url('');
-    height: 100vh;
+    height: 70vh;
     width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: brightness(100%);
-    overflow: hidden;
-}
-
-.Second_banner::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.45);
-}
-
-.Main_Card {
-    width: 255px;
-    height: 245px;
-    background-color: white;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0px 4px 40px rgb(255, 255, 255);
-    transition: 0.5s;
-    transform: scale(1);
-}
-
-.Main_Card:hover {
-    transform: scale(1.1);
-}
-
-.Card_img {
-    width: 100px;
-}
-
-.Card_container {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 3;
-    position: relative;
-}
-
-.bible_verse {
-    position: absolute;
-    z-index: 4;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
-.bible_verse_title {
-    font-size: 80px;
+.img_size {
+    width: 800px;
+    height: auto;
+    border-radius: 35px;
+}
+
+.Second_img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bible_verse {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    background-color: rgb(0, 123, 255, 0.9);
+    padding: 70px;
+    margin-left: -80px;
 }
 
 .bible_limiter {
     width: 600px;
-    text-align: center;
-    background-color: white;
-    padding: 20px;
+    color: white;
 }
 
 .bible_location {
@@ -239,17 +336,20 @@ body {
 
 .Bible_icon_Container {
     background-color: #3674B5;
-    padding: 15px;
     border-radius: 50%;
     box-shadow: 0px 4px 40px rgb(255, 255, 255);
 }
 
 .icon_container {
     width: 300px;
-    height: 250px;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: end;
+}
+
+.Previous_button {
+    background-color: transparent;
+    border: none;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(683%) hue-rotate(4deg) brightness(115%) contrast(100%);
 }
 
 .Previous_button:hover {
@@ -265,9 +365,13 @@ body {
 
 .Third_banner {
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-color: #584B4B;
     overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 }
 
 .Third_banner_title {
@@ -280,15 +384,16 @@ body {
 
 .Third_banner_number_banner {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
 .Third_banner_number_banner_container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 150px;
 }
 
 .Third_font {
@@ -342,12 +447,15 @@ body {
 } */
 
 .Footer_banner {
-    background-image: url("https://z-p3-scontent.fadd1-1.fna.fbcdn.net/v/t39.30808-6/475453934_670374615313738_8449406336027600875_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEuQO9cSI_w4qumej4wsndLKasMARokeAMpqwwBGiR4A1fOmnerNW3p-b-F9ym9baQfjcDm-xipjbvh7-Xbiuzw&_nc_ohc=ERjHRnSS32MQ7kNvgGTi8kF&_nc_oc=Adj9VDpYrIwbjpxPtZi4-PUjGskMa8KWU-VJ5F_bBp_mrZFxrEqOHAWs_omqs0qOC-g&_nc_zt=23&_nc_ht=z-p3-scontent.fadd1-1.fna&_nc_gid=AFQth2v9s2-knve0UON3krU&oh=00_AYC3RdLiIGTzwTKscmQQhU1eKel2s7aTrPoAM9bGsOexFA&oe=67BF7F9A");
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 .input_bar {
@@ -361,7 +469,7 @@ body {
     height: 380px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
 }
 
@@ -375,21 +483,34 @@ body {
 
 .text_area {
     width: 100%;
-    height: 300px;
+    height: 230px;
 }
 
 .Footer_flex {
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-}
-
-.Previous_button {
-    background-color: transparent;
-    border: none;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(683%) hue-rotate(4deg) brightness(115%) contrast(100%);
 }
 
 .Card_container {
     padding: 100px 0px 70px 0px;
+}
+
+.Main_Icon {
+    width: 60px;
+    height: 60px;
+}
+
+.input_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.section_divder {
+    width: 100%;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.5);
 }

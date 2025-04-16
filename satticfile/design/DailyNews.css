@@ -1,0 +1,40 @@
+
+body {
+    background-color: #EAEAEA;
+}
+
+.Nav_bar_container {
+    background-color: white;
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 90px 0px 60px;
+}
+
+.Loop_Container {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Main_loop {
+    text-decoration: none;
+}
+
+.Image_container {
+    width: 600px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.Img_width {
+    max-width: 100%;
+    height: auto;
+}

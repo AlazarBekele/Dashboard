@@ -9,12 +9,15 @@ from .views import (
     news_upload_link
 )
 
+from .views import custom_404
+
 from django.conf import settings
 from django.conf.urls.static import static
 
 from .views import JSON_data_respond
+
 from django.conf.urls import handler404
-handler404 = 'Website.views.error_page'
+handler404 = custom_404
 
 urlpatterns = [
     

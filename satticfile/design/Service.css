@@ -25,7 +25,11 @@
     width: 50%;
     height: 100vh;
     backdrop-filter: blur(20px);
-    overflow-y: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .first_title {
@@ -33,7 +37,6 @@
     height: 70px;
     display: flex;
     align-items: center;
-    padding-top: 20px;
 }
 
 .hor_line {
@@ -54,7 +57,7 @@
 
 .Service_btn_containers {
     width: 100%;
-    height: 40vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +69,7 @@
     border: none;
     backdrop-filter: blur(20px);
     background-color: transparent;
-    font-size: 30px;
+    font-size: 20px;
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     transition: 0.5s ease-in-out;
@@ -84,7 +87,6 @@
 
 .creation {
     width: 100%;
-    height: 75px;
     display: flex;
     align-items: end;
     justify-content: center;

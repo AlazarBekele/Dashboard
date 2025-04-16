@@ -29,3 +29,12 @@ function FetchData() {
     setInterval (FetchData, 5000)
 
     FetchData();
+
+
+    let Loading_container = document.getElementById ('loading_function')
+
+    Loading_container.addEventListener ( 'click' , () => {
+
+        Loading_container.classList.add ('Disable_load')
+
+    });
