@@ -396,13 +396,17 @@ body {
     width: 50px;
 }
 
-/* .youtube {
-    width: 450px;
-} */
+.Feature_News {
+    width: 50%;
+    height: 650px;
+    background-color: black;
+}
 
-.video_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.socia_News {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /*  */
