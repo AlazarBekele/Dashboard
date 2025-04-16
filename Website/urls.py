@@ -13,6 +13,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from .views import JSON_data_respond
+from django.conf.urls import handler404
+handler404 = 'Website.views.error_page'
 
 urlpatterns = [
     

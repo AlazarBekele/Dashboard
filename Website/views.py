@@ -143,3 +143,8 @@ def news_upload_link (request):
     }
 
     return render (request, 'Include/News/News_upload_page.html', context=context)
+
+
+def error_page (request, exception):
+
+    return render (request, '404Error.html', status=404)
