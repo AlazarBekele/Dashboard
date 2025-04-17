@@ -86,7 +86,7 @@ class Login_data (UserCreationForm):
 
     }))
 
-    Password = forms.CharField  (max_length=8, label='Password', widget = forms.PasswordInput(attrs={
+    Password = forms.CharField  (max_length=8, label='Password confirm', widget = forms.PasswordInput(attrs={
 
         'class' : 'Name_container',
         'placeholder' : 'Password',
@@ -94,7 +94,7 @@ class Login_data (UserCreationForm):
 
     }))
 
-    Password_cconfirm = forms.CharField  (max_length=8, label='Password confirm', widget = forms.PasswordInput(attrs={
+    Password_confirm = forms.CharField  (max_length=8, label='Password confirm', widget = forms.PasswordInput(attrs={
 
         'class' : 'Name_container',
         'placeholder' : 'Password confirm',
@@ -105,4 +105,4 @@ class Login_data (UserCreationForm):
     class Meta:
         
         model = User
-        fields = ('First_Name', 'Last_Name', 'User_Name', 'Password', 'Password_cconfirm')
+        fields = ('First_Name', 'Last_Name', 'User_Name', 'Password', 'Password_confirm')
