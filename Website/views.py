@@ -163,3 +163,9 @@ def Login_check (request):
 
             login_input.save()
             return redirect ('login')
+        
+    context = {
+    'login_input' : login_input
+    }
+        
+    return render (request, 'login.html', context=context)
