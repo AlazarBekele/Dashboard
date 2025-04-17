@@ -184,6 +184,7 @@ body {
 .news_description {
     font-size: 10px;
     width: 100%;
+    margin-left: 10px;
 }
 
 .Last_hero_banner {
@@ -404,6 +405,9 @@ body {
 .Feature_News {
     width: 50%;
     height: 650px;
+    background-color: rgb(228, 228, 228);
+    padding: 15px;
+    overflow-y: auto;
 }
 
 .socia_News {
