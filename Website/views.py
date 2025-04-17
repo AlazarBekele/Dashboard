@@ -3,6 +3,7 @@ from .models import Image_Container, Second_image, Background_upload, Bible_quot
 from .forms import YourModelForm, News_upload
 from django.http import JsonResponse
 from EAG.settings import EMAIL_HOST_USER
+from .forms import Login_data
 
 from django.core.mail import send_mail
 
@@ -150,3 +151,8 @@ def news_upload_link (request):
 def custom_404 (request, exception):
 
     return render (request, '404.html', status=400)
+
+
+def Login_check (request):
+
+    login_input = 
