@@ -181,6 +181,11 @@ body {
     filter: brightness(100%);
 }
 
+.news_description {
+    font-size: 10px;
+    width: 100%;
+}
+
 .Last_hero_banner {
     width: 60px;
     color: white;
@@ -474,7 +479,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    flex-direction: column;
+    width: 100%;
     overflow: hidden;
 }
 
