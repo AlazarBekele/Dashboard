@@ -399,7 +399,8 @@ body {
 
 .fourth_icon { 
     filter: brightness(0) saturate(100%) invert(16%) sepia(60%) saturate(7468%) hue-rotate(357deg) brightness(97%) contrast(120%);
-    width: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 .Feature_News {
@@ -414,7 +415,13 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
+}
+
+.socia_flex {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
 }
 
 .Img_width {
