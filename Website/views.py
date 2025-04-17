@@ -155,4 +155,11 @@ def custom_404 (request, exception):
 
 def Login_check (request):
 
-    login_input = 
+    login_input = Login_data(request.POST or None)
+
+    if request.method == 'POST':
+
+        if login_input.is_valid():
+
+            login_input.save()
+            return redirect ('login')
