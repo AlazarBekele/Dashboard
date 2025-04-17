@@ -479,9 +479,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 100%;
     overflow: hidden;
+}
+
+.news_category {
+    font-size: 13px;
+}
+
+.news_time {
+    font-size: 9px;
 }
 
 .text_area {
