@@ -34,19 +34,21 @@ def index (request):
         name = request.POST.get('name')
         Subject = request.POST.get('Subject')
         message = request.POST.get('idea')
+
         form_email = 'alazarthe70@gmail.com',
         recipient_list = ['alazarthe34@gmail.com']  
 
         print (name, Subject, message)
 
-        send_mail (
-            name,
+        send_mail(
             Subject,
             message,
-            form_email,
-            recipient_list
+            "alazarthe70@gmail.com",
+            ['alazarthe34@gmail.com'],
+            fail_silently=False,
         )
 
+        print("Email sent!")
     return render (request, 'index.html', context=context)
 
 # Define the location of the html file
