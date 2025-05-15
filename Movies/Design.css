@@ -1,0 +1,114 @@
+
+body {
+  padding-left: 320px;
+  padding-right: 20px;
+  padding: 10px 20px 10px 320px;
+}
+
+.Side_bar {
+  width: 300px;
+  height: 100vh;
+  background-color: rgb(21, 20, 20);
+  padding: 25px 25px 25px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.Side_logo {
+  width: 110px;
+}
+
+.Main_Input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.side_icon_container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  height: 50px;
+  transition: 0.3s ease-in-out;
+  padding-left: 10px;
+}
+
+.Icon_hover {
+  transition: 0.3s ease-in-out;
+}
+
+.side_icon_container:hover .Icon_hover {
+  filter: brightness(0) saturate(100%) invert(44%) sepia(61%) saturate(5983%) hue-rotate(1deg) brightness(104%) contrast(104%);
+}
+
+.side_icon_container:hover {
+  transform: translateX(10px);
+  background-color: rgb(19, 7, 3);
+}
+
+.Input_container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 25px;
+}
+
+.CATEGORY_color {
+  color: rgb(98, 98, 98);
+}
+
+.catrgory_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.catrgory_action {
+  transition: 0.3s ease-in-out;
+}
+
+.catrgory_action:hover {
+  transform: translateX(5px);
+}
+
+.Btn_all {
+  border: none;
+  background-color: orangered;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.Home_main_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.Main_Movies_icon {
+  width: 95px;
+}
+
+.Main_image {
+  width: 280px;
+  transition: 0.5s ease-in-out;
+}
+
+.Main_movies_banner_IMG {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  row-gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main_image:hover {
+  transform: scale(1.1);
+}
