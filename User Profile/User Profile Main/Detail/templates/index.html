@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    {% comment %} Django Css Design {% endcomment %}
+    <link rel="stylesheet" href="{% static 'Design/Index/Desgin.css' %}">
+
+</head>
+{% for Imgs in Img %}
+
+<body style="background-image: url (' {{ Imgs.Picture.url }} ')">
+
+
+
+</body>
+
+{% endfor %}
+</html>
