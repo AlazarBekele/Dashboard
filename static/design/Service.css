@@ -108,6 +108,13 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+    overflow: hidden;
+}
+
+.Video_container {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
 }
 
 Youtube_Title {
