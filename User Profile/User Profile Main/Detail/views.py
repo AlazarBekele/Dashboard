@@ -3,11 +3,11 @@ from .models import Detail_Background_Img
 
 def index (request):
 
-    Background_Data = Detail_Background_Img.objects.all()
+    Background_Data = Detail_Background_Img.objects.first()
 
     context = {
 
-        'Img' : Background_Data
+        'Background_IMG' : Background_Data
 
     }
 
