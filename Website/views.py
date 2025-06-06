@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_data, News_catagory, News_post, Footer_img
+from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_data, News_catagory, News_post, Footer_img, Service_category
 from .forms import YourModelForm, News_upload
 from django.http import JsonResponse
 from EAG.settings import EMAIL_HOST_USER
@@ -71,9 +71,11 @@ def Regular_program (request):
 def Service_container (request):
 
     Service_img = Service_data.objects.all()
+    Service_Cate = Service_category.all()
 
     context = {
-        'Service_img' : Service_img
+        'Service_img' : Service_img,
+        'list' : Service_Cate
     }
 
     return render (request, 'Include/Hero_Banner_Include/Services.html', context=context)
