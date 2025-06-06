@@ -80,3 +80,10 @@ class Footer_img (models.Model):
 
     def __str__(self):
         return self.title
+    
+
+class News_category (models.Model):
+
+    Name = models.CharField (max_length=30)
+    def __str__(self):
+        return self.Name
