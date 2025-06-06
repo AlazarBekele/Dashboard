@@ -82,7 +82,7 @@ class Footer_img (models.Model):
         return self.title
     
 
-class News_category (models.Model):
+class Service_category (models.Model):
 
     Name = models.CharField (max_length=30)
     def __str__(self):

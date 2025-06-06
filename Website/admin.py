@@ -7,7 +7,8 @@ from .models import (
     Service_data,
     News_catagory,
     News_post,
-    Footer_img
+    Footer_img,
+    Service_category
 )
 
 # Register your models here.
@@ -20,3 +21,4 @@ admin.site.register(Service_data)
 admin.site.register(News_catagory)
 admin.site.register(News_post)
 admin.site.register(Footer_img)
+admin.site.register(Service_category)
