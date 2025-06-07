@@ -439,6 +439,17 @@ body {
     border: 1px solid black;
 }
 
+.First_Date_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.First_Date_container div img {
+    filter: invert(37%) sepia(96%) saturate(7491%) hue-rotate(202deg) brightness(101%) contrast(101%);
+    width: 50px;
+}
+
 /*  */
 
 .location {
