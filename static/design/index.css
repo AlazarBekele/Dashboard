@@ -429,6 +429,16 @@ body {
     height: auto;
 }
 
+.up_coming_Event_container {
+    width: 40%;
+    height: 500px;
+    background-color: black;
+}
+
+.First_card {
+
+}
+
 /*  */
 
 .location {
