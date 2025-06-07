@@ -110,3 +110,5 @@ Add Main Background image when the Hero banner's is caming.
 
 
 Change the Service Link Into Youtube Video's
+
+Remove the Main Feauture content & replace with Next Evenvts
