@@ -89,7 +89,7 @@ class Service_category (models.Model):
         return self.Name
     
 
-class Regular_program (models.Model):
+class Regular_program_Container (models.Model):
 
     Day_Name = models.CharField (max_length=15)
     Discription = models.TextField ()

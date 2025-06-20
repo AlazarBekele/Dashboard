@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_data, News_catagory, News_post, Footer_img, Service_category
+from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_data, News_catagory, News_post, Footer_img, Service_category, Regular_program_Container
 from .forms import YourModelForm, News_upload
 from django.http import JsonResponse
 from EAG.settings import EMAIL_HOST_USER
@@ -21,6 +21,7 @@ def index (request):
     previous_bible = Bible_quote.objects.all()
     Footer = Footer_img.objects.all()
     News_dis = News_post.objects.all()
+    Regular_pro = Regular_program.objects.all()
 
 
     context = {
