@@ -21,7 +21,7 @@ def index (request):
     previous_bible = Bible_quote.objects.all()
     Footer = Footer_img.objects.all()
     News_dis = News_post.objects.all()
-    Regular_pro = Regular_program.objects.all()
+    Regular_pro = Regular_program_Container.objects.all()
 
 
     context = {
@@ -31,6 +31,7 @@ def index (request):
         'previous_bible' : previous_bible,
         'Footer' : Footer,
         'News_front' : News_dis,
+        'Regular' : Regular_pro
     }
 
     if request.method == 'POST':
