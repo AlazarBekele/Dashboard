@@ -87,14 +87,3 @@ class Service_category (models.Model):
     Name = models.CharField (max_length=30)
     def __str__(self):
         return self.Name
-    
-
-class Regular_program_Container (models.Model):
-
-    Day_Name = models.CharField (max_length=15)
-    Discription = models.TextField ()
-    Date_field = models.DateTimeField (auto_created=True, auto_now_add=True, blank=True, null=True)
-    Regular_Img = models.ImageField (upload_to='Regular/')
-
-    def __str__(self):
-        return self.Day_Name + ' ' + self.Discription
