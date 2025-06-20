@@ -463,12 +463,17 @@ body {
     justify-content: start;
     align-items: center;
     width: 500px;
+    min-height: 300px;
     border-radius: 9px;
 }
 
 .Regular_img {
     width: 200px;
-    border-radius: 5px
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: visible;
 }
 
 .Title_regular {
