@@ -450,7 +450,7 @@ body {
 }
 
 .Regular_all_container {
-    padding: 0px 10px 35px 10px;
+    padding: 0px 10px 45px 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -478,6 +478,13 @@ body {
 .Regular_discriptions {
     width: 250px;
     font-size: 13px;
+}
+
+.Weekly_pro {
+    width: 100%;
+    padding: 0px 0px 15px 0px;
+    display: flex;
+    place-content: center;
 }
 
 /*  */
