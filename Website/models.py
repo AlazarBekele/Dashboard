@@ -87,3 +87,12 @@ class Service_category (models.Model):
     Name = models.CharField (max_length=30)
     def __str__(self):
         return self.Name
+    
+
+class Event (models.Model):
+
+    Name = models.CharField (max_length=30)
+    Event_Img = models.ImageField (upload_to='Event/')
+
+    def __str__(self):
+        return self.Name
