@@ -29,7 +29,7 @@ def index (request):
         'BibleGenerate' : Bible_data,
         'previous_bible' : previous_bible,
         'Footer' : Footer,
-        'News_front' : News_dis
+        'News_front' : News_dis,
     }
 
     if request.method == 'POST':
@@ -172,7 +172,7 @@ def Login_check (request):
             return redirect ('login')
         
     context = {
-    'login_input' : login_input
+        'login_input' : login_input
     }
         
     return render (request, 'login.html', context=context)

@@ -8,7 +8,7 @@ from .models import (
     News_catagory,
     News_post,
     Footer_img,
-    Service_category
+    Service_category,
 )
 
 # Register your models here.
