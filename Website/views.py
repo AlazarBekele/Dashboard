@@ -175,4 +175,4 @@ def Login_check (request):
         'login_input' : login_input
     }
         
-    return render (request, 'login.html', context=context)
+    return render (request, 'Log/Login_Page.html', context=context)
