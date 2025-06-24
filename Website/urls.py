@@ -7,7 +7,7 @@ from .views import (
     upload_Page,
     post_News,
     news_upload_link,
-    Login_check
+    Login_check,
 )
 
 from .views import custom_404

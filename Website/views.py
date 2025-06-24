@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Image_Container, Second_image, Background_upload, Bible_quote, Service_data, News_catagory, News_post, Footer_img, Service_category
 from .forms import YourModelForm, News_upload
-from django.http import JsonResponse
 from EAG.settings import EMAIL_HOST_USER
 from .forms import Login_data
 
@@ -9,6 +8,8 @@ from django.core.mail import send_mail
 
 from googleapiclient.discovery import build
 from django.shortcuts import render
+
+from django.http import JsonResponse
 
 
 # Create your views here.
