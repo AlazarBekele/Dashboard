@@ -34,3 +34,11 @@
     font-variation-settings:
       "wdth" 100;
 }
+
+
+.edu_vic {
+  font-family: "Edu VIC WA NT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}

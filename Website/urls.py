@@ -6,7 +6,8 @@ from .views import (
     Donate,
     upload_Page,
     post_News,
-    news_upload_link
+    news_upload_link,
+    Login_check
 )
 
 from .views import custom_404
@@ -28,7 +29,8 @@ urlpatterns = [
     path('upload/', upload_Page, name='upload_page'),
     path('data/', JSON_data_respond, name='JSON_data_respond'),
     path('news/', post_News, name='news'),
-    path('newsupload/', news_upload_link, name='news upload')
+    path('newsupload/', news_upload_link, name='news upload'),
+    path('login/', Login_check, name='login')
 
 ]
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
