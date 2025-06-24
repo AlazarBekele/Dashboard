@@ -42,3 +42,11 @@
   font-weight: weight;
   font-style: normal;
 }
+
+
+.playwrite_Auto {
+  font-family: "Playwrite AU TAS", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
